@@ -1,0 +1,175 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* CSS Document
+ * Based on parallax template 
+ * and Standard Han template
+ * Modified by Mimee on 1 July, 2013 
+ */
+@charset "utf-8";
+
+@font-face {
+    font-family: 'ff-han';
+    src: local("Hiragino Sans GB");
+    font-weight: normal;
+    font-style: normal;
+
+}
+a:link {
+    text-decoration: none !important;
+    color:#0066CC;
+ }
+a:active,a:hover{
+    color:white;
+}
+@font-face {
+    font-family: 'bf-han';
+    src: local(STHeiti), local(SimHei), local(STXihei);
+    unicode-range: U+4E00-9FA5;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#sidebar {
+    float:left;
+    width:22%;
+    top:0px;
+    left:0px;
+    height:100%;
+    position:fixed;
+    z-index:500;
+    opacity:0.6;
+    box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+
+}
+
+#sidebar {
+    background-image: linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+    background-image: -o-linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+    background-image: -moz-linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+    background-image: -webkit-linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+    background-image: -ms-linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        right top,
+        color-stop(0.37, rgb(200,229,255)),
+        color-stop(0.69, rgb(224,240,255)));
+}
+
+.onemanlogo{
+    position:relative;
+    top:10px;
+    left:15%;
+    width:70%;
+    margin-top:0px;
+    margin-left:0px;
+    z-index:1;
+    opacity: 0.9;
+}
+
+.navigation{
+    position:absolute;
+    z-index:1;
+    top:30px;
+    width:100%;
+}
+.navigation li{
+    font-family:'ff-han';/*could be bf*/
+    color:#0066CC;
+    display:block;
+    padding: 0 10px;
+    line-height:30px;
+    margin-bottom:2px;
+    font-weight:bold;
+    -webkit-transition: all .5s ease－in－out;
+    /*border-bottom:1px solid black;*/
+    text-align:right;
+    /*width:170px;*/
+}
+.navigation li:hover,.active{
+    font-size:24pt;
+    color:white;
+    cursor:pointer;
+    text-shadow:1px 1px 0px #528ecc;
+    -webkit-transition: all .2s ease－in－out;
+    width:100%!important;
+}
+/**
+ * Content starts here
+ */
+#rightblock {
+    float:right;
+    margin: 0 0 0 0px;
+    position:fixed;
+    height:100%;
+    width: 100%;
+    left:0;
+    top:0;
+    background-image: linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+    background-image: -o-linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+    background-image: -moz-linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+    background-image: -webkit-linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+    background-image: -ms-linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        right top,
+        color-stop(0.37, rgb(200,229,255)),
+        color-stop(0.69, rgb(224,240,255)));
+    box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+/**
+ * Sharing on platforms, currently not used
+ */
+/*.sharePanel{
+    position:absolute;
+    background-color: rgba(163,172,225,0.3);
+    top:0px;
+    left:80%;
+    max-width:300px;
+    z-index:1;
+    box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}*/
+/**
+ * Frame for pretty images or just central object.
+ */
+.centralFrame{
+    position:relative;
+    top:0px;
+    left: 30%;
+    max-width: 70%;
+    max-height:70%;
+    width:70%;
+    z-index: 1;
+    vertical-align: middle;
+}
+
+.parallaxbg{
+    position:absolute;
+    display: block;
+    text-shadow:1px 1px 0px #528ecc;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    left:20px;
+    right:20px;
+    top:40px;
+    font-size:20px;
+    color:rgba(0,86,161,0.9);
+    z-index:1;
+    font-family:"ff-han";
+}
+/**
+ * Wrapper for content, such as lists
+ */
+.wrapper{
+    top:0px;
+    width:100%;
+    max-height: 100%;
+    margin:0 auto;
+    position:center;
+}
