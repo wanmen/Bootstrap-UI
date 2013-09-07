@@ -6039,7 +6039,9 @@ body.modal-open,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  height: 600px;
   max-width: 100%;
   line-height: 1;
 }
