@@ -12,192 +12,122 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="css/bottle.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <link href="css/bootstrap-ie7.css" rel="stylesheet">
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="css/index.css" rel="stylesheet">
   </head>
-<!-- NAVBAR
-================================================== -->
+
   <body>
-    <div class="navbar-wrapper">
+
+    <div class="navbar navbar-fixed-top">
       <div class="container">
-
-        <div class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">万门大学</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">知识库<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="books.html">图书</a></li>
-                    <li><a href="videos.html">视频</a></li>
-                    <li><a href="articles.html">经验贴</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">更多</li>
-                    <li><a href="#">万门X</a></li>
-                  </ul>
-                </li>
-                <li><a href="courses.html">课程</a></li>
-                <li><a href="contact.html">关于</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="login.html">登陆</a></li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">万门大学</a>
         </div>
-
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">关于万门</a></li>
+            <li><a href="#contact">加入万门</a></li>
+            <li><a href="#contact">登录</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
 
-
-    <!-- Carousel
-    ================================================== -->
     <div id="myCarousel" class="carousel slide">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1> 万门大学-你是你的大学</h1>
-              <p>在这里你可以随时随地学习你想学的知识</p>
-              <p><a class="btn btn-large btn-primary" href="#">申请加入</a></p>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/first_slider.png" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" style="height: 500px; width: 100%; display: block; padding-left: 10%; padding-right: 10%;">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <p>网络时代，变革大学教育的践行者。</p>
+                        <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>万门知识库</h1>
-              <p>公共知识的集合</p>
-              <p><a class="btn btn-large btn-primary" href="#knowledge">了解更多</a></p>
+            <div class="item">
+                <img src="img/second_slider.png" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide" style="height: 500px; width: 100%; display: block; padding-left: 10%; padding-right: 10%;">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <p>以“独立之思考，求实之精神，人文之情怀”为立校精神的万门大学，将和万千青年人一起打开自我内心深处的那扇大门，唤起自我改变的力量，从而让智慧与美德的光芒照亮世界。</p>
+                        <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>万门X</h1>
-              <p>线下的知识分享群体</p>
-              <p><a class="btn btn-large btn-primary" href="#x">查看更多</a></p>
+            <div class="item">
+                <img src="img/third_slider.png" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide" style="height: 500px; width: 100%; display: block; padding-left: 10%; padding-right: 10%;">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <p>这是一个网站，也是一所大学——精美多元的视频课程、高效互动的线上学习环境、全面系统的数字图书馆、以及独立自由的线下实体活动。网络时代的大学，始于万门。</p>
+                        <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
 
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>南方科技大学-朱清时校长寄语</h2>
-          <p>“万门大学和南方科技大学一样，都是在教育改革的道路上勇敢尝试的先驱者，是一群敢于梦想的教育理想主义者对于中国未来高等教育的大胆尝试。”</p>
-          <p><a class="btn btn-default" href="http://www.sustc.edu.cn/cn/press/campusnews/campusnews-20130513153018/">阅读博客 &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Alfonso Castro教授寄语</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="http://v.youku.com/v_show/id_XNTcyMDYzMDc2.html">查看视频 &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>另一个教授寄语</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">何为万门？ <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <div class="second-nav">
+        <div class="container">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="#memo">我与万门</a></li>
+                <li><a href="#course">万门课堂</a></li>
+                <li><a href="#library">万门图书馆</a></li>
+                <li><a href="#x-project">万门大学X</a></li>
+            </ul>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+    </div>
+
+    <div id="memo" class="featurette">
+        <img class="featurette-image pull-left" src="http://todc.github.io/todc-bootstrap/assets/img/examples/browser-icon-safari.png">
+        <h2 class="featurette-heading">我与万门</h2>
+        <p class="lead">万门大学属于我们每一个人。无论是来自国内外名师的肯定与鼓励，亦或是来自大家的支持和建议；一句真心的称赞，一番中肯的批评，这些都激励并鞭策着万门大学不断前进。</p>
+    </div>
+    <hr class="featurette-divider">
+    <div id="course" class="featurette">
+        <img class="featurette-image pull-right" src="http://todc.github.io/todc-bootstrap/assets/img/examples/browser-icon-safari.png">
+        <h2 class="featurette-heading">万门课堂</h2>
+        <p class="lead">在大学，我们不应仅局限于某一专业，更要发展综合知识能力，以成为一个完整的人；在大学，我们收获知识之余，更要学会思考自我，思考世界，从而追求一种富有意义的人生。多媒体和网络技术的运用，更将使学习内容不再枯燥无味，使学习环境不再单调沉闷，让学习变得更为有趣、更为个性、更为高效。</p>
+    </div>
+    <hr class="featurette-divider">
+    <div id="library" class="featurette">
+        <img class="featurette-image pull-left" src="http://todc.github.io/todc-bootstrap/assets/img/examples/browser-icon-firefox.png">
+        <h2 class="featurette-heading">万门图书馆</h2>
+        <p class="lead">信息时代，学习资源的收集和获取不再是关键问题。更重要的是在于从汗牛充栋的课程及书籍中有效地筛选材料；是在于对繁多驳杂的材料进行系统性的梳理；是在于输出对知识的理解，形成经验之谈并分享于众。</p>
+    </div>
+    <hr class="featurette-divider">
+    <div id="x-project" class="featurette">
+        <img class="featurette-image pull-right" src="http://todc.github.io/todc-bootstrap/assets/img/examples/browser-icon-safari.png">
+        <h2 class="featurette-heading">万门大学 X</h2>
+        <p class="lead">浮躁功利的环境里，我们需要追求知识的那份纯粹；慵懒沉寂的风气下，我们需要自我改变的那种决心。静心笃学，自由讨论，积极分享——我们的大学需要这样一种氛围，我们的校园需要这样一个团体。</p>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>万门大学</p>
         </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette" id="knowledge">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">万门知识库 <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette" id="x">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">万门X <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">向上</a></p>
-        <p>&copy; 万门大学, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.js"></script>
   </body>
 </html>
