@@ -160,7 +160,67 @@
             </div>
           </div>
         </div>
+        <hr>
         
+        <h2>分类浏览</h2>
+        <hr>
+        <div class="tabbable tabs-left">
+          <ul class="nav nav-tabs col-xs-1">
+            <li class="active"><a href="#1" data-toggle="tab">物理</a></li>
+            <li><a href="#2" data-toggle="tab">数学</a></li>
+            <li><a href="#3" data-toggle="tab">化学</a></li>
+          </ul>
+          <div class="tab-content col-xs-8">
+            <div class="tab-pane active" id="1">
+              <div class="row">
+                <div class="col-xs-4">
+                  <a href="#" class="thumbnail">
+                   <img src="data:image/png;base64," data-src="holder.js/240x180" alt="">
+                  </a>
+                </div>
+                <div class="col-xs-4">
+                  <a href="#" class="thumbnail">
+                   <img src="data:image/png;base64," data-src="holder.js/240x180" alt="">
+                  </a>
+                </div>
+                <div class="col-xs-4">
+                  <a href="#" class="thumbnail">
+                    <img src="data:image/png;base64," data-src="holder.js/240x180" alt="">
+                  </a>
+                </div>
+                <div class="col-xs-4">
+                  <a href="#" class="thumbnail">
+                    <img src="data:image/png;base64," data-src="holder.js/240x180" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="2">
+               <div class="row">
+                <div class="col-xs-3">
+                  <a href="#" class="thumbnail"> 
+                    <img src="data:image/png;base64," data-src="holder.js/240x180" alt="">
+                  </a>
+                </div>
+                <div class="col-xs-3">
+                  <a href="#" class="thumbnail">
+                    <img src="data:image/png;base64," data-src="holder.js/240x180" alt="">
+                  </a>
+                </div>
+                <div class="col-xs-3">
+                  <a href="#" class="thumbnail">
+                   <img src="data:image/png;base64," data-src="holder.js/240x180" alt="">
+                  </a>
+                </div>
+                <div class="col-xs-3">
+                  <a href="#" class="thumbnail">
+                   <img src="data:image/png;base64," data-src="holder.js/240x180" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
