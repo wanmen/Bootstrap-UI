@@ -1,0 +1,23 @@
+
+body {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+address {
+  margin: 10px 0;
+}
+
+.wx-sign {
+  margin-top: 5%;
+}
+
+.wx-sign-in, .wx-sign-up {
+  margin-bottom: 20px;
+}
+
+.wx-sign-button {
+  display: block;
+  max-width: 180px;
+  margin: 15px 0;
+}
