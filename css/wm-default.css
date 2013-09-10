@@ -1,23 +1,54 @@
 
 body {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 address {
   margin: 10px 0;
 }
 
-.wx-sign {
+main span.glyphicon {
+  font-size: 83.3%;
+}
+
+main section h3 {
+  font-size: 144%;
+}
+
+.wm-sign {
   margin-top: 5%;
 }
 
-.wx-sign-in, .wx-sign-up {
+.wm-sign-in, .wm-sign-up {
   margin-bottom: 20px;
 }
 
-.wx-sign-button {
+.wm-sign-button {
   display: block;
-  max-width: 180px;
+  min-width: 180px;
+  max-width: 50%;
   margin: 15px 0;
 }
+
+.wm-book-gallery h3 a {
+  float: right;
+  margin-top: 8px;
+  font-size: 72%;
+}
+
+.wm-book-gallery img {
+  width: 100%;
+}
+
+.wm-book-gallery figcaption {
+  margin: 8px;
+  max-width: 100%;
+  text-wrap: none;
+  text-align: center;
+}
+
+.wm-list-popular {
+  line-height: 169%;
+}
+
