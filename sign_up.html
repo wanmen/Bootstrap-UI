@@ -14,6 +14,9 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.js"></script>
     <![endif]-->
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="css/bootstrap-ie7.css"/>
+    <![endif]-->
   </head>
 
   <body>
@@ -31,7 +34,7 @@
         <nav class="collapse navbar-collapse" role="navigation">
           <ul class="nav navbar-nav">
             <li class="active">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">知识库<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="books.html">知识库<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="books.html">图书</a></li>
                 <li><a href="videos.html">视频</a></li>
@@ -42,12 +45,12 @@
               </ul>
             </li>
           </ul>
-          <a class="navbar-right navbar-btn btn btn-default" href="sign_in.html">登录</a>
+          <a class="navbar-right navbar-btn btn btn-primary" href="sign_in.html">登录</a>
           <form class="navbar-right navbar-form" role="search">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="图书，视频，经验贴"/>
+              <input class="form-control" type="text" placeholder="图书，视频，经验贴" title="请输入关键字进行搜索"/>
               <span class="input-group-btn">
-                <button type="submit" class="btn btn-default">
+                <button class="btn btn-default" type="submit">
                   <span class="glyphicon glyphicon-search"></span>
                 </button>
               </span>
@@ -57,46 +60,46 @@
       </div>
     </header>
 
-    <main class="container wx-sign" role="main">
-      <div class="col-md-4 col-md-offset-1">
-        <h4 class="wx-sign-in">欢迎加入万门大学</h4>
+    <main class="container wm-sign" role="main">
+      <div class="col-sm-5 col-md-4 col-sm-offset-1">
+        <h4 class="wm-sign-in">欢迎加入万门大学</h4>
         <form class="form-horizontal" role="form">
           <div class="form-group">
             <label class="sr-only control-label" for="user_email">邮箱</label>
-            <div class="col-md-10">
+            <div class="col-sm-10">
               <input class="form-control" type="email" id="user_email" placeholder="邮箱" title="请输入你的帐号邮箱">
             </div>
           </div>
           <div class="form-group">
             <label class="sr-only control-label" for="user_name">昵称</label>
-            <div class="col-md-10">
-              <input class="form-control" type="text" id="user_name" placeholder="昵称" title="请输入你的网络昵称">
+            <div class="col-sm-10">
+              <input class="form-control" type="text" id="user_name" placeholder="昵称" title="请输入你的帐号昵称">
             </div>
           </div>
           <div class="form-group">
             <label class="sr-only control-label" for="user_password">密码</label>
-            <div class="col-md-10">
-              <input class="form-control" type="password" id="user_password" placeholder="密码" title="请输入你的帐号密码">
+            <div class="col-sm-10">
+              <input class="form-control" type="password" id="user_password" placeholder="密码" title="请输入你的帐号密码(至少6个字符)">
             </div>
           </div>
           <div class="form-group">
-            <label class="sr-only control-label" for="user_password_confirmation">确认密码</label>
-            <div class="col-md-10">
-              <input class="form-control" type="password" id="user_password_confirmation" placeholder="确认密码" title="请再次输入你的帐号密码">
+            <label class="sr-only control-label" for="user_password_confirmation">密码确认</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="password" id="user_password_confirmation" placeholder="密码确认" title="请再次输入你的帐号密码">
             </div>
           </div>
           <div class="form-group">
-            <div class="col-xs-offset-2 col-xs-10">
-              <button class="btn btn-default" type="submit">完成注册</button>
+            <div class="col-sm-offset-2 col-sm-10">
+              <button class="btn btn-primary" type="submit">完成注册</button>
             </div>
           </div>
         </form>
       </div>
-      <div class="col-md-4 col-md-offset-1">
-        <h4 class="wx-sign-up">你还可以用第三方帐号登录</h4>
-        <a class="btn btn-primary wx-sign-button" href="">使用人人帐号登录</a>
-        <a class="btn btn-success wx-sign-button" href="">使用豆瓣帐号登录</a>
-        <a class="btn btn-danger wx-sign-button" href="">使用新浪微博登录</a>
+      <div class="col-sm-5 col-sm-offset-1">
+        <h4 class="wm-sign-up">你还可以用第三方帐号登录</h4>
+        <a class="btn btn-primary wm-sign-button" href="">使用人人帐号登录</a>
+        <a class="btn btn-success wm-sign-button" href="">使用豆瓣帐号登录</a>
+        <a class="btn btn-danger wm-sign-button" href="">使用新浪微博登录</a>
         <p>
           已有帐号？<a href="sign_in.html">马上登录</a>
         </p>
@@ -106,7 +109,7 @@
     <footer class="navbar-default navbar-fixed-bottom" role="contentinfo">
       <div class="container">
         <address class="text-muted">
-          &copy; 2013 万门大学 &ensp; 京ICP备12345678号
+          &copy; 2013 万门公益 &ensp; 京ICP备13038614号-1
           <div class="pull-right">
             <a href="about.html">关于万门</a> &bull;
             <a href="join_us.html">加入我们</a> &bull;
@@ -117,9 +120,9 @@
       </div>
     </footer>
 
-
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/wx-dom.js"></script>
   </body>
 
 </html>

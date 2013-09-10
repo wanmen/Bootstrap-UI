@@ -14,6 +14,9 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.js"></script>
     <![endif]-->
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="css/bootstrap-ie7.css"/>
+    <![endif]-->
   </head>
 
   <body>
@@ -31,7 +34,7 @@
         <nav class="collapse navbar-collapse" role="navigation">
           <ul class="nav navbar-nav">
             <li class="active">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">知识库<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="books.html">知识库<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="books.html">图书</a></li>
                 <li><a href="videos.html">视频</a></li>
@@ -42,12 +45,12 @@
               </ul>
             </li>
           </ul>
-          <a class="navbar-right navbar-btn btn btn-default" href="sign_in.html">登录</a>
+          <a class="navbar-right navbar-btn btn btn-primary" href="sign_in.html">登录</a>
           <form class="navbar-right navbar-form" role="search">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="图书，视频，经验贴"/>
+              <input class="form-control" type="text" placeholder="图书，视频，经验贴" title="请输入关键字进行搜索"/>
               <span class="input-group-btn">
-                <button type="submit" class="btn btn-default">
+                <button class="btn btn-default" type="submit">
                   <span class="glyphicon glyphicon-search"></span>
                 </button>
               </span>
@@ -64,7 +67,7 @@
     <footer class="navbar-default navbar-fixed-bottom" role="contentinfo">
       <div class="container">
         <address class="text-muted">
-          &copy; 2013 万门大学 &ensp; 京ICP备12345678号
+          &copy; 2013 万门公益 &ensp; 京ICP备13038614号-1
           <div class="pull-right">
             <a href="about.html">关于万门</a> &bull;
             <a href="join_us.html">加入我们</a> &bull;
@@ -75,9 +78,9 @@
       </div>
     </footer>
 
-
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/wx-dom.js"></script>
   </body>
 
 </html>
