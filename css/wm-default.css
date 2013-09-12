@@ -1,23 +1,51 @@
 
+
 body {
   padding-top: 70px;
-  padding-bottom: 70px;
 }
 
-address {
-  margin: 10px 0;
+blockquote {
+  padding-left: 4px;
+  background: #F5F5F5;
+  border-left: 2px dotted #428BCA;
 }
 
-main span.glyphicon {
+span.glyphicon {
   font-size: 83.3%;
 }
 
-main section h3 {
+main {
+  margin-bottom: 30px;
+}
+
+main h3 {
   font-size: 144%;
 }
 
+main p {
+  margin-bottom: 1em;
+  line-height: 169%;
+}
+
+footer address {
+  margin: 10px 0;
+  color: #999999;
+}
+
+footer address div {
+  float: right;
+}
+
+.wm-back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 5px;
+  font-size: 240%;
+  line-height: 100%;
+}
+
 .wm-sign {
-  margin-top: 5%;
+  margin: 5% 0;
 }
 
 .wm-sign-in, .wm-sign-up {
@@ -31,10 +59,23 @@ main section h3 {
   margin: 15px 0;
 }
 
-.wm-book-gallery h3 a {
+.wm-quick-link {
   float: right;
-  margin-top: 8px;
-  font-size: 72%;
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.wm-inline-form {
+  display: inline-block;
+}
+
+.wm-sns-share img {
+  margin: 0 1px;
+  cursor: pointer;
+}
+
+.wm-sns-share a {
+  margin-top: 0;
 }
 
 .wm-book-gallery img {
@@ -42,13 +83,49 @@ main section h3 {
 }
 
 .wm-book-gallery figcaption {
-  margin: 8px;
-  max-width: 100%;
-  text-wrap: none;
+  margin: 8px 0 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   text-align: center;
 }
 
-.wm-list-popular {
+.wm-book-recommend img {
+  width: 100%;
+}
+
+.wm-book-recommend figcaption {
+  margin: 6px 0 18px;
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.wm-book-metadata {
   line-height: 169%;
+}
+
+.wm-book-metadata span {
+  margin-right: 7px;
+  color: #999999;
+}
+
+.wm-book-intro {
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.wm-list-popular li {
+  margin-bottom: 4px;
+}
+
+.wm-tags-popular {
+  margin-bottom: 4px;
+}
+
+.wm-tag-category {
+  font-size: 15px;
 }
 
