@@ -119,18 +119,62 @@
         <section class="wm-book-comments">
           <div class="wm-sns-share">
             <span class="text-muted">分享到</span>
-            <img src="../img/renren.png" height="24" alt="人人" title="分享到人人"/>
-            <img src="../img/douban.png" height="24" alt="豆瓣" title="分享到豆瓣"/>
-            <img src="../img/sina.png" height="24" alt="新浪微博" title="分享到新浪微博"/>
-            <img src="../img/qzone.png" height="24" alt="QQ空间" title="分享到QQ空间"/>
-            <img src="../img/tencent.png" height="24" alt="腾讯微博" title="分享到腾讯微博"/>
+            <img src="../img/sns/renren.png" height="24" alt="人人" title="分享到人人"/>
+            <img src="../img/sns/douban.png" height="24" alt="豆瓣" title="分享到豆瓣"/>
+            <img src="../img/sns/sina.png" height="24" alt="新浪微博" title="分享到新浪微博"/>
+            <img src="../img/sns/qzone.png" height="24" alt="QQ空间" title="分享到QQ空间"/>
+            <img src="../img/sns/tencent.png" height="24" alt="腾讯微博" title="分享到腾讯微博"/>
             <a class="btn btn-primary btn-sm wm-quick-link" href="">发表评论</a>
           </div>
-          <div class="wmd-panel">
-            <div id="wmd-button-bar"></div>
-            <textarea class="wmd-input" id="wmd-input"></textarea>
+        </section>
+        <section class="wm-comments">
+          <h4 class="text-muted">有2条评论</h4>
+          <div class="row">
+            <figure class="col-sm-2 wm-user-info">
+              <a href="">
+                <img class="img-rounded" src="../img/user/user_soliton.jpg" alt="" title="soliton"/>
+              </a>
+            </figure>
+            <div class="col-sm-10 wm-user-comment">
+              <h5>
+                <a href="">soliton</a>
+                <span>2013-09-13 19:26</span>
+              </h5>
+              <p>如何理解人类的发展史？在挖掘冷冰冰的事实的时候，人们从制度转型的角度来试图解释为什么会这样。而政治、经济与社会则是理解制度转型最重要的三个方面。
+              </p>
+            </div>
           </div>
-          <div id="wmd-preview" class="wmd-panel wmd-preview"></div>
+          <hr/>
+          <div class="row">
+            <figure class="col-sm-2 wm-user-info">
+              <a href="">
+                <img class="img-rounded" src="../img/user/user_photino.jpg" alt="" title="photino"/>
+              </a>
+            </figure>
+            <div class="col-sm-10 wm-user-comment">
+              <h5>
+                <a href="">photino</a>
+                <span>2013-09-13 19:32</span>
+              </h5>
+              <p>作为后人，我们总是免不了要对发生过的历史作些“如果”的想象，特别是当这种历史对我们是带有屈辱色彩的历史。比如中国人就常想“如果戊戌变法成功了中国如何”，“没有文化大革命又如何”，同时也会有大量“为什么这样，为什么那样”的问题，如“为什么日本能维新成功，而中国不能”。
+              </p>
+            </div>
+          </div>
+        </section>
+        <hr/>
+        <section>
+          <h4 class="text-muted">
+            你的评论
+            <a class="btn btn-primary btn-xs pull-right" href="">如何使用？</a>
+          </h4>
+          <form class="form-horizontal" role="form">
+            <div class="wmd-panel">
+              <div id="wmd-button-bar"></div>
+              <textarea class="wmd-input" id="wmd-input"></textarea>
+            </div>
+            <div class="wmd-panel wmd-preview" id="wmd-preview"></div>
+            <button class="btn btn-primary" type="submit">发布</button>
+          </form>
         </section>
       </article>
 
@@ -184,7 +228,7 @@
       <div class="container">
         <address class="text-muted">
           &copy; 2013 万门公益 &ensp; 京ICP备13038614号-1
-          <div>
+          <div class="pull-right">
             <a href="../about.html">关于万门</a> &bull;
             <a href="../join_us.html">加入我们</a> &bull;
             <a href="../help.html">帮助中心</a> &bull;
@@ -197,14 +241,42 @@
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/wm-dom.js"></script>
-    <script type="text/javascript" src="../js/Markdown.Converter.js"></script>
-    <script type="text/javascript" src="../js/Markdown.Sanitizer.js"></script>
-    <script type="text/javascript" src="../js/Markdown.Editor.js"></script>
-    <script type="text/javascript" src="../js/Markdown.local.zh.js"></script>
+    <script src="../js/Markdown.Converter.js"></script>
+    <script src="../js/Markdown.Sanitizer.js"></script>
+    <script src="../js/Markdown.Editor.js"></script>
+    <script src="../js/Markdown.Extra.js"></script>
+    <script src="../js/Markdown.local.zh.js"></script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showProcessingMessages: false,
+        tex2jax: {inlineMath: [["$", "$"], ["\\(", "\\)"]]}
+      });
+    </script>
+    <script type="text/javascript">
+      (function() {
+        var QUEUE = MathJax.Hub.queue,
+          math = null;
+
+        QUEUE.Push(function() {
+          math = MathJax.Hub.getAllJax('#wmd-preview')[0];
+        });
+
+        window.UpdateMath = function(TeX) {
+          $('wmd-preview').html(TeX);
+          MathJax.Hub.Queue(['Typeset', math, 'wmd-preview']);
+        }
+
+        $('#wmd-input').keypress(function(event) {
+          UpdateMath($(this).val());
+        });
+
+      })();
+    </script>
     <script type="text/javascript">
       (function () {
         var converter = Markdown.getSanitizingConverter();
-        converter.hooks.chain('preBlockGamut', function (text, rbg) {
+        converter.hooks.chain('preBlockGamut', function(text, rbg) {
           return text.replace(/^ {0,3}""" *\n((?:.*?\n)+?) {0,3}""" *$/gm,
             function (whole, inner) {
               return "<blockquote>" + rbg(inner) + '</blockquote>\n';

@@ -1,7 +1,6 @@
 
-
 body {
-  padding-top: 70px;
+  padding-top: 60px;
 }
 
 blockquote {
@@ -15,7 +14,7 @@ span.glyphicon {
 }
 
 main {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 main h3 {
@@ -32,8 +31,24 @@ footer address {
   color: #999999;
 }
 
-footer address div {
-  float: right;
+.wm-carousel {
+  margin: 30px 0;
+}
+
+.wm-carousel img {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wm-features .tab-content {
+  padding: 20px 0;
+  border: 1px solid #DDDDDD;
+  border-top: none;
+}
+
+.wm-features img {
+  width: 100%;
 }
 
 .wm-back-to-top {
@@ -70,7 +85,7 @@ footer address div {
 }
 
 .wm-sns-share img {
-  margin: 0 1px;
+  margin: 0 2px;
   cursor: pointer;
 }
 
@@ -117,6 +132,38 @@ footer address div {
   text-align: justify;
 }
 
+.wm-comments {
+  margin: 25px 0 0;
+}
+
+.wm-comments h4 {
+  margin: 14px 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #999999;
+}
+
+.wm-user-info img {
+  width: 100%;
+  max-width: 80px;
+}
+
+.wm-user-comment {
+  font-size: 13px;
+  line-height: 169%;
+  text-align: justify;
+}
+
+.wm-user-comment h5 {
+  margin: 0 0 13px;
+}
+
+.wm-user-comment h5 span {
+  float: right;
+  font-size: 12px;
+  color: #999999;
+}
+
 .wm-list-popular li {
   margin-bottom: 4px;
 }
@@ -127,5 +174,12 @@ footer address div {
 
 .wm-tag-category {
   font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .navbar-form {
+    width: 28%;
+    max-width: 400px;
+  }
 }
 

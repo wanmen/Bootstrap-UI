@@ -18,6 +18,7 @@
 
 .wmd-preview {
   min-height: 14px;
+  margin-bottom: 20px;
   border: 1px dashed silver;
   background: #F5F5F5;
 }
@@ -73,9 +74,12 @@
 
 .wmd-prompt-dialog {
   padding: 5px 5px 0;
-  background: #F5F5F5;
-  border: 1px solid #285E8E;
+  background-clip: padding-box;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 7px;
+  box-shadow: 0px 6px 12px rgba(0,​ 0,​ 0,​ 0.176);
+  z-index: 1000;
 }
 
 .wmd-prompt-dialog > div {
