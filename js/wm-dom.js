@@ -18,7 +18,7 @@
       } else {
         $('.wm-back-to-top').remove();
       }
-   });
+    });
 
     $('.wm-book-gallery img').css('height',
       $('.wm-book-gallery img').eq(0).css('height')
