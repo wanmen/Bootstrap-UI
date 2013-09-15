@@ -5,28 +5,9 @@
 ;(function($) {
   'use strict';
 
-  var host = 'http://wanmen.org';
+  var host = 'http://www.wanmen.org';
 
   $(document).ready(function() {
-
-    $(window).scroll(function () {
-      if($(this).scrollTop() > $(window).height()) {
-        if(!$('.wm-back-to-top').length) {
-          $('main').append('<a class="wm-back-to-top" href="#" title="返回顶部">' +
-            '<span class="glyphicon glyphicon-circle-arrow-up"></span></a>');
-        }
-      } else {
-        $('.wm-back-to-top').remove();
-      }
-    });
-
-    $('.wm-book-gallery img').css('height',
-      $('.wm-book-gallery img').eq(0).css('height')
-    );
-
-    $('.wm-book-recommend img').css('height',
-      $('.wm-book-recommend img').eq(0).css('height')
-    );
 
     $('.wm-sns-share img').on('click', function() {
       var img = $(this).attr('src').replace(/(.+\/)/g, ''),
@@ -45,6 +26,47 @@
         return false;
       }
       return true;
+    });
+
+  });
+
+  $(window).load(function() {
+
+    $(window).scroll(function () {
+      if($(this).scrollTop() > $(window).height()) {
+        if(!$('.wm-back-to-top').length) {
+          $('main').append('<a class="wm-back-to-top" href="#" title="返回顶部">' +
+            '<span class="glyphicon glyphicon-circle-arrow-up"></span></a>');
+        }
+      } else {
+        $('.wm-back-to-top').remove();
+      }
+    });
+
+    $('.wm-gallery img').css('height',
+      $('.wm-gallery img').eq(0).css('height')
+    );
+
+    $('.wm-recommend img').css('height',
+      $('.wm-recommend img').eq(0).css('height')
+    );
+
+    $('.wm-show-video a').on('click', function() {
+      var video = $(this).attr('href'),
+        width = $('main article').width();
+      if(video.indexOf('youku') != -1) {
+        var vid = video.slice(video.indexOf('id_') + 3, -5);
+        video = 'http://player.youku.com/embed/' + vid;
+        $('.wm-video iframe').attr('src', video).css('height', width * 0.67);
+        $('.wm-video').css('width', width).show();
+        return false;
+      } else {
+        return true;
+      }
+    });
+
+    $('.wm-video button.close').on('click', function() {
+      $('.wm-video').hide();
     });
 
   });
