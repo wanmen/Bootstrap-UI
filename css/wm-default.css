@@ -1,6 +1,7 @@
 
 body {
   padding-top: 60px;
+  text-align: justify;
 }
 
 blockquote {
@@ -32,7 +33,7 @@ footer address {
 }
 
 .wm-carousel {
-  margin: 30px 0;
+  margin: 30px 15px;
 }
 
 .wm-carousel img {
@@ -49,6 +50,23 @@ footer address {
 
 .wm-features img {
   width: 100%;
+}
+
+.wm-video {
+  display: none;
+  position: fixed;
+  top: 100px;
+  padding: 0 20px 20px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  box-shadow: 0px 6px 12px rgba(0,​ 0,​ 0,​ 0.176);
+  z-index: 1000;
+}
+
+.wm-video iframe {
+  width: 100%;
+  height: 400px;
 }
 
 .wm-back-to-top {
@@ -93,11 +111,11 @@ footer address {
   margin-top: 0;
 }
 
-.wm-book-gallery img {
+.wm-gallery img {
   width: 100%;
 }
 
-.wm-book-gallery figcaption {
+.wm-gallery figcaption {
   margin: 8px 0 24px;
   overflow: hidden;
   white-space: nowrap;
@@ -105,11 +123,11 @@ footer address {
   text-align: center;
 }
 
-.wm-book-recommend img {
+.wm-recommend img {
   width: 100%;
 }
 
-.wm-book-recommend figcaption {
+.wm-recommend figcaption {
   margin: 6px 0 18px;
   font-size: 13px;
   overflow: hidden;
@@ -118,18 +136,22 @@ footer address {
   text-align: center;
 }
 
-.wm-book-metadata {
+.wm-metadata {
   line-height: 169%;
 }
 
-.wm-book-metadata span {
+.wm-metadata span {
   margin-right: 7px;
   color: #999999;
 }
 
-.wm-book-intro {
+.wm-book-list {
+  margin: 2em;
+}
+
+.wm-indent {
+  margin: 1em 0;
   text-indent: 2em;
-  text-align: justify;
 }
 
 .wm-comments {
@@ -151,7 +173,6 @@ footer address {
 .wm-user-comment {
   font-size: 13px;
   line-height: 169%;
-  text-align: justify;
 }
 
 .wm-user-comment h5 {

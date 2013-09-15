@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="网络大学，高等教育"/>
+    <meta name="description" content="万门大学不仅是一所网络大学，它也是一种信仰，这种信仰来自于我们相信每个人内在的价值，相信大学之道的存在；它更是一次中国高等教育改革的践行——在符合时代特征和发展规律的基础上，对大学精神以及大学教育进行深入的思考和尝试。"/>
+    <title>编辑器使用说明 | 万门大学</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" media="screen"/>
+    <link rel="stylesheet" href="../css/wm-default.css" media="screen"/>
+    <link rel="stylesheet" href="../css/wm-pagedown.css" media="screen"/>
+    <link rel="icon" type="image/png" href="../img/favicon.png"/>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.js"></script>
+      <script src="../js/respond.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="../css/bootstrap-ie7.css"/>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <header class="navbar navbar-default navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">万门大学</a>
+        </div>
+        <nav class="collapse navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="../books.html">知识库<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../books.html"><span class="glyphicon glyphicon-book"></span> 图书</a>
+                </li>
+                <li>
+                  <a href="../videos.html"><span class="glyphicon glyphicon-facetime-video"></span> 视频</a>
+                </li>
+                <li>
+                  <a href="../articles.html"><span class="glyphicon glyphicon-edit"></span> 经验贴</a>
+                </li>
+                <li class="divider"></li>
+                <li class="dropdown-header">其它分类</li>
+                <li>
+                  <a href="../tags.html"><span class="glyphicon glyphicon-tags"></span> 标签</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a class="navbar-right navbar-btn btn btn-primary" href="../sign_in.html">登录</a>
+          <form class="navbar-right navbar-form" role="search">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="图书，视频，经验贴" title="请输入关键字进行搜索"/>
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </div>
+          </form>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" role="main">
+      <article class="col-sm-8">
+        <h3 class="page-header">
+          <span class="wm-title">编辑器使用说明</span>
+          <span class="wm-quick-link">
+            <a href="JavaScript:window.history.back();">返回</a>
+          </span>
+        </h3>
+        <section class="wm-indent">
+          <p>我们采用 <a href="https://github.com/ujifgc/pagedown">PageDown</a> 来作为 Markdown 解析器。Markdown 是一种轻量级标记语言，你可以参阅这份<a href="http://wowubuntu.com/markdown/">说明文档</a>。我们使用 <a href="http://www.mathjax.org/">MathJax</a> 来支持 LaTeX 数学公式，比如
+          </p>
+          <p>\( J_\alpha(x) = \sum\limits_{m=0}^\infty \frac{(-1)^m}{m! \, \Gamma(m + \alpha + 1)}{\left({\frac{x}{2}}\right)}^{2 m + \alpha} \)
+          </p>
+          <p>你可以在下面学习 Markdown 语法。注意，数学公式的动态预览目前还不支持。在 Firefox 浏览器中，你可以通过刷新页面来预览 LaTeX 输出。
+          </p>
+        </section>
+
+        <section>
+          <div class="wmd-panel">
+            <div id="wmd-button-bar"></div>
+            <textarea class="wmd-input" id="wmd-input"></textarea>
+          </div>
+          <div class="wmd-panel wmd-preview" id="wmd-preview"></div>
+        </section>
+      </article>
+
+      <aside class="col-sm-4">
+        <section>
+          <h3 class="page-header">
+            <span class="glyphicon glyphicon-question-sign"></span> 帮助中心
+            <a class="wm-quick-link" href="">查看全部</a>
+          </h3>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="navbar-default" role="contentinfo">
+      <div class="container">
+        <address class="text-muted">
+          &copy; 2013 万门公益 &ensp; 京ICP备13038614号-1
+          <div class="pull-right">
+            <a href="../about.html">关于万门</a> &bull;
+            <a href="../join_us.html">加入我们</a> &bull;
+            <a href="../help.html">帮助中心</a> &bull;
+            <a href="../terms.html">免责声明</a>
+          </div>
+        </address>
+      </div>
+    </footer>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/wm-dom.js"></script>
+    <script src="../js/Markdown.Converter.js"></script>
+    <script src="../js/Markdown.Sanitizer.js"></script>
+    <script src="../js/Markdown.Editor.js"></script>
+    <script src="../js/Markdown.Extra.js"></script>
+    <script src="../js/Markdown.local.zh.js"></script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showProcessingMessages: false,
+        tex2jax: {inlineMath: [["$", "$"], ["\\(", "\\)"]]}
+      });
+    </script>
+    <script type="text/javascript">
+      (function() {
+        var QUEUE = MathJax.Hub.queue,
+          math = null;
+
+        QUEUE.Push(function() {
+          math = MathJax.Hub.getAllJax('#wmd-preview')[0];
+        });
+
+        window.UpdateMath = function(TeX) {
+          $('wmd-preview').html(TeX);
+          MathJax.Hub.Queue(['Typeset', math, 'wmd-preview']);
+        }
+
+        $('#wmd-input').keypress(function(event) {
+          UpdateMath($(this).val());
+        });
+
+      })();
+    </script>
+    <script type="text/javascript">
+      (function () {
+        var converter = Markdown.getSanitizingConverter();
+        converter.hooks.chain('preBlockGamut', function(text, rbg) {
+          return text.replace(/^ {0,3}""" *\n((?:.*?\n)+?) {0,3}""" *$/gm,
+            function (whole, inner) {
+              return "<blockquote>" + rbg(inner) + '</blockquote>\n';
+          });
+        });
+
+        var editor = new Markdown.Editor(converter, null, {strings: Markdown.local.zh});
+        editor.run();
+      })();
+    </script>
+  </body>
+
+</html>
+
