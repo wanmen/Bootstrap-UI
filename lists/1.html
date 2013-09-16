@@ -74,10 +74,14 @@
         <h3 class="page-header">
           <span class="wm-title">管理员推荐书单</span>
           <span class="wm-quick-link">
-            <a href="">修改</a> |
+            <a href="../books/new.html">修改</a> |
             <a href="JavaScript:window.history.back();">返回</a>
           </span>
         </h3>
+        <p class="wm-pub-metadata">
+          <a href="">soliton</a> 发布于 2013-09-14 21:27
+          <span class="pull-right">4个标签 | 2人喜欢 | 2个评论</span>
+        </p>
         <section class="wm-indent">
           <p>这一部分内容是关于书单的总体简介。
           </p>
@@ -133,9 +137,24 @@
           </p>
         </section>
 
+        <section class="wm-metadata">
+          <div>
+            <span>标签</span>
+            <a href="">通识教育</a> |
+            <a href="">历史</a> |
+            <a href="">社会学</a> |
+            <a href="">政治</a> &emsp;
+            <span>评分</span> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
+            <form class="wm-inline-form" action="1.html" method="post">
+              <input type="hidden"/>
+              <button class="btn btn-default btn-xs" type="submit">我喜欢</button>
+            </form>
+          </div>
+        </section>
+
         <hr/>
 
-        <section class="wm-book-comments">
+        <section id="sns_share">
           <div class="wm-sns-share">
             <span class="text-muted">分享到</span>
             <img src="../img/sns/renren.png" height="24" alt="人人" title="分享到人人"/>
@@ -143,7 +162,7 @@
             <img src="../img/sns/sina.png" height="24" alt="新浪微博" title="分享到新浪微博"/>
             <img src="../img/sns/qzone.png" height="24" alt="QQ空间" title="分享到QQ空间"/>
             <img src="../img/sns/tencent.png" height="24" alt="腾讯微博" title="分享到腾讯微博"/>
-            <a class="btn btn-primary btn-sm wm-quick-link" href="">发表评论</a>
+            <a class="btn btn-primary btn-sm wm-quick-link" href="#edit_comments">发表评论</a>
           </div>
         </section>
 
@@ -184,7 +203,7 @@
 
         <hr/>
 
-        <section>
+        <section id="edit_comments">
           <h4 class="text-muted">
             你的评论
             <a class="btn btn-primary btn-sm pull-right" href="../help/editor.html">如何编辑？</a>
@@ -271,7 +290,7 @@
     <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
-        showProcessingMessages: false,
+        messageStyle: "none",
         tex2jax: {inlineMath: [["$", "$"], ["\\(", "\\)"]]}
       });
     </script>
