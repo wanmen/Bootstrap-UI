@@ -14,6 +14,10 @@ span.glyphicon {
   font-size: 83.3%;
 }
 
+h3.page-header + p.wm-pub-metadata {
+  margin-top: -14px;
+}
+
 main {
   margin-bottom: 40px;
 }
@@ -27,9 +31,30 @@ main p {
   line-height: 169%;
 }
 
+aside ul {
+  padding-left: 20px;
+  line-height: 169%;
+  list-style: outside square;
+}
+
 footer address {
   margin: 10px 0;
   color: #999999;
+}
+
+.wm-med-vspace {
+  margin-top: 10px;
+}
+
+.wm-med-hspace {
+  margin-left: 10px;
+}
+
+.wm-form label {
+  display: inline-block;
+  margin-top: 7px;
+  font-weight: normal;
+  text-align: right;
 }
 
 .wm-carousel {
@@ -111,6 +136,10 @@ footer address {
   margin-top: 0;
 }
 
+.wm-gallery {
+  margin-top: 20px;
+}
+
 .wm-gallery img {
   width: 100%;
 }
@@ -141,7 +170,7 @@ footer address {
 }
 
 .wm-metadata span {
-  margin-right: 7px;
+  margin-right: 5px;
   color: #999999;
 }
 
@@ -152,6 +181,12 @@ footer address {
 .wm-indent {
   margin: 1em 0;
   text-indent: 2em;
+}
+
+.wm-pub-metadata {
+  margin-top: -5px;
+  font-size: 12px;
+  color: #999999;
 }
 
 .wm-comments {
@@ -202,5 +237,9 @@ footer address {
     width: 28%;
     max-width: 400px;
   }
+
+  .wm-form input {
+    width: 75%;
+}
 }
 

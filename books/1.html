@@ -74,10 +74,14 @@
         <h3 class="page-header">
           <span class="wm-title">枪炮、病菌与钢铁</span>
           <span class="wm-quick-link">
-            <a href="">修改</a> |
+            <a href="edit.html">修改</a> |
             <a href="JavaScript:window.history.back();">返回</a>
           </span>
         </h3>
+        <p class="wm-pub-metadata">
+          <a href="">soliton</a> 发布于 2013-09-14 21:27
+          <span class="pull-right">4个标签 | 1个单子 | 2人喜欢 | 2个评论</span>
+        </p>
         <section class="row wm-gallery">
           <figure class="col-sm-4">
             <img src="http://img.wanmen.org/2013/09/04feec86b4294f78ba6d00c4085f88fc.jpg" alt="" title="枪炮、病菌与钢铁"/>
@@ -89,9 +93,8 @@
             <span>出版日期</span> 2006年4月 <br/>
             <hr/>
             <span>标签</span> <a href="">历史</a> | <a href="">政治</a> | <a href="">人类学</a> | <a href="">考古</a> <br/>
-            <span>已加入书单</span> <a href="">社会学书单</a> <br/>
-            <span>有2人评分</span> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span> <br/>
-            <span>有2人喜欢</span>
+            <span>书单</span> <a href="">社会学书单</a> <br/>
+            <span>评分</span> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
             <form class="wm-inline-form" action="1.html" method="post">
               <input type="hidden"/>
               <button class="btn btn-default btn-xs" type="submit">我喜欢</button>
@@ -120,7 +123,7 @@
 
         <hr/>
 
-        <section class="wm-book-comments">
+        <section id="sns_share">
           <div class="wm-sns-share">
             <span class="text-muted">分享到</span>
             <img src="../img/sns/renren.png" height="24" alt="人人" title="分享到人人"/>
@@ -128,7 +131,7 @@
             <img src="../img/sns/sina.png" height="24" alt="新浪微博" title="分享到新浪微博"/>
             <img src="../img/sns/qzone.png" height="24" alt="QQ空间" title="分享到QQ空间"/>
             <img src="../img/sns/tencent.png" height="24" alt="腾讯微博" title="分享到腾讯微博"/>
-            <a class="btn btn-primary btn-sm wm-quick-link" href="">发表评论</a>
+            <a class="btn btn-primary btn-sm wm-quick-link" href="#edit_comments">发表评论</a>
           </div>
         </section>
 
@@ -169,7 +172,7 @@
 
         <hr/>
 
-        <section>
+        <section id="edit_comments">
           <h4 class="text-muted">
             你的评论
             <a class="btn btn-primary btn-sm pull-right" href="../help/editor.html">如何编辑？</a>
@@ -256,7 +259,7 @@
     <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
-        showProcessingMessages: false,
+        messageStyle: "none",
         tex2jax: {inlineMath: [["$", "$"], ["\\(", "\\)"]]}
       });
     </script>
