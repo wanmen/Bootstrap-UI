@@ -55,9 +55,9 @@
             </li>
           </ul>
           <a class="navbar-right navbar-btn btn btn-primary" href="../sign_in.html">登录</a>
-          <form class="navbar-right navbar-form" role="search">
+          <form class="navbar-right navbar-form" action="../search.html" role="search">
             <div class="input-group">
-              <input class="form-control" type="text" placeholder="图书，视频，经验贴" title="请输入关键字进行搜索"/>
+              <input class="form-control" type="text" placeholder="图书，视频，经验贴" title="请输入关键词进行搜索"/>
               <span class="input-group-btn">
                 <button class="btn btn-default" type="submit">
                   <span class="glyphicon glyphicon-search"></span>
@@ -70,62 +70,63 @@
     </header>
 
     <main class="container" role="main">
-      <h3 class="page-header text-center">
-        <span class="wm-title">修改图书信息</span>
-        <span class="wm-quick-link">
+      <article class="container">
+        <h3 class="page-header text-center">
+          <span class="wm-title">修改图书信息</span>
+          <span class="wm-quick-link">
             <a href="JavaScript:window.history.back();">返回</a>
-        </span>
-      </h3>
-      <form class="container form-horizontal wm-form" role="form">
-        <div class="row">
-        <div class="col-sm-6">
-          <div class="form-group">
-            <label class="col-sm-3" for="book_cover">封面*</label>
-            <div>
-            <a class="btn btn-default" href="">上传图片</a> <br/>
-            <input class="col-sm-offset-3 form-control wm-med-vspace" type="text" id="book_cover" placeholder="请输入封面图片URL(必填)" title="请输入封面图片URL(必填)" required autofocus/>
-            
+          </span>
+        </h3>
+        <form class="container form-horizontal wm-form" role="form">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="col-sm-3" for="book_cover">封面*</label>
+                <div>
+                  <a class="btn btn-default" href="">上传图片</a> <br/>
+                  <input class="col-sm-offset-3 form-control wm-md-top" type="text" id="book_cover" placeholder="请输入封面图片URL(必填)" title="请输入封面图片URL(必填)" required/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3" for="book_title">书名*</label>
+                <input class="form-control" type="text" id="book_title" placeholder="请输入书名(必填)" title="请输入书名(必填)" required/>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3" for="book_author">作者*</label>
+                <input class="form-control" type="text" id="book_author" placeholder="请输入图书作者(必填)" title="请输入图书作者(必填)" required/>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3" for="book_translater">译者</label>
+                <input class="form-control" type="text" id="book_translater" placeholder="请输入图书译者" title="请输入图书译者" required/>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3" for="book_publisher">出版社</label>
+                <input class="form-control" type="text" id="book_publisher" placeholder="请输入出版社" title="请输入出版社"/>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3" for="book_pubdate">出版日期</label>
+                <input class="form-control" type="text" id="book_pubdate" placeholder="请输入出版日期" title="请输入出版日期"/>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3" for="book_dbid">豆瓣ID</label>
+                <input class="form-control" type="text" id="book_dbid" placeholder="请输入豆瓣ID" title="请输入豆瓣ID"/>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3" for="book_url">图书链接</label>
+                <input class="form-control" type="text" id="book_url" placeholder="请输入图书链接URL" title="请输入图书链接URL"/>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="form-group">
+                <label class="col-sm-offset-1" for="book_summary">简介*</label>
+                <textarea class="col-sm-offset-1 form-control" id="book_summary" rows="18" placeholder="请输入图书简介(必填)" title="请输入图书简介(必填)" required autofocus></textarea>
+              </div>
             </div>
           </div>
-          <div class="form-group">
-            <label class="col-sm-3" for="book_title">书名*</label>
-            <input class="form-control" type="text" id="book_title" placeholder="请输入书名(必填)" title="请输入书名(必填)" required/>
-          </div>
-          <div class="form-group">
-            <label class="col-sm-3" for="book_author">作者*</label>
-            <input class="form-control" type="text" id="book_author" placeholder="请输入图书作者(必填)" title="请输入图书作者(必填)" required/>
-          </div>
-          <div class="form-group">
-            <label class="col-sm-3" for="book_translater">译者</label>
-            <input class="form-control" type="text" id="book_translater" placeholder="请输入图书译者" title="请输入图书译者" required/>
-          </div>
-          <div class="form-group">
-            <label class="col-sm-3" for="book_publisher">出版社</label>
-            <input class="form-control" type="text" id="book_publisher" placeholder="请输入出版社" title="请输入出版社"/>
-          </div>
-           <div class="form-group">
-            <label class="col-sm-3" for="book_pubdate">出版日期</label>
-            <input class="form-control" type="text" id="book_pubdate" placeholder="请输入出版日期" title="请输入出版日期"/>
-          </div>
-          <div class="form-group">
-            <label class="col-sm-3" for="book_dbid">豆瓣ID</label>
-            <input class="form-control" type="text" id="book_dbid" placeholder="请输入豆瓣ID" title="请输入豆瓣ID"/>
-          </div>
-          <div class="form-group">
-            <label class="col-sm-3" for="book_url">图书链接</label>
-            <input class="form-control" type="text" id="book_url" placeholder="请输入图书链接URL" title="请输入图书链接URL"/>
-          </div>
-        </div>
-          <div class="col-sm-5">
-            <div class="form-group">
-              <label class="col-sm-offset-1" for="book_summary">简介*</label>
-              <textarea class="col-sm-offset-1 form-control" id="book_summary" rows="18" placeholder="请输入图书简介" title="请输入图书简介" required></textarea>
-            </div>
-          </div>
-        </div>
-        <button class="col-sm-offset-5 btn btn-primary" type="submit">完成</button>
-        <button class="btn btn-default wm-med-hspace" type="reset">重新修改</button>
-      </form>
+          <button class="col-sm-offset-5 btn btn-primary" type="submit">完成</button>
+          <button class="btn btn-default wm-md-left" type="reset">重新修改</button>
+        </form>
+      </article>
     </main>
 
     <footer class="navbar-default" role="contentinfo">

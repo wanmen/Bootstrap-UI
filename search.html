@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="keywords" content="网络大学，高等教育"/>
     <meta name="description" content="万门大学不仅是一所网络大学，它也是一种信仰，这种信仰来自于我们相信每个人内在的价值，相信大学之道的存在；它更是一次中国高等教育改革的践行——在符合时代特征和发展规律的基础上，对大学精神以及大学教育进行深入的思考和尝试。"/>
-    <title>登录 | 万门大学</title>
+    <title>搜索 | 万门大学</title>
     <link rel="stylesheet" href="css/bootstrap.css" media="screen"/>
     <link rel="stylesheet" href="css/wm-default.css" media="screen"/>
-    <link rel="shortcut icon" href="img/favicon.png"/>
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.js"></script>
@@ -31,7 +31,7 @@
           </button>
           <a class="navbar-brand" href="index.html">万门大学</a>
         </div>
-        <nav class="collapse navbar-collapse" action="search.html" role="navigation">
+        <nav class="collapse navbar-collapse" role="navigation">
           <ul class="nav navbar-nav">
             <li class="active">
               <a class="dropdown-toggle" data-toggle="dropdown" href="books.html">知识库<b class="caret"></b></a>
@@ -54,7 +54,7 @@
             </li>
           </ul>
           <a class="navbar-right navbar-btn btn btn-primary" href="sign_in.html">登录</a>
-          <form class="navbar-right navbar-form" role="search">
+          <form class="navbar-right navbar-form" action="search.html" role="search">
             <div class="input-group">
               <input class="form-control" type="text" placeholder="图书，视频，经验贴" title="请输入关键词进行搜索"/>
               <span class="input-group-btn">
@@ -68,46 +68,9 @@
       </div>
     </header>
 
-    <main class="container wm-sign" role="main">
-      <div class="col-sm-5 col-md-4 col-sm-offset-1">
-        <h4 class="wm-lg-bottom">欢迎登录万门大学</h4>
-        <form class="form-horizontal" role="form">
-          <div class="form-group">
-            <label class="sr-only control-label" for="user_email">邮箱</label>
-            <div class="col-sm-10">
-              <input class="form-control" type="email" id="user_email" placeholder="邮箱" title="请输入你的帐号邮箱" required autofocus>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="sr-only control-label" for="user_password">密码</label>
-            <div class="col-sm-10">
-              <input class="form-control" type="password" id="user_password" placeholder="密码" title="请输入你的帐号密码" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-10">
-              <div class="checkbox">
-                <label><input type="checkbox">记住我 (下次自动登录)</label>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-10">
-              <button class="btn btn-primary" type="submit">登录</button>
-              <button class="btn btn-default col-sm-offset-1" type="button">忘记密码？</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-sm-5 col-sm-offset-1">
-        <h4 class="wm-lg-bottom">你还可以用第三方帐号登录</h4>
-        <a class="btn btn-primary wm-sign-button" href="">使用人人帐号登录</a>
-        <a class="btn btn-success wm-sign-button" href="">使用豆瓣帐号登录</a>
-        <a class="btn btn-danger wm-sign-button" href="">使用新浪微博登录</a>
-        <p>
-          还没有帐号？<a href="sign_up.html">马上注册</a>
-        </p>
-      </div>
+    <main class="container" role="main">
+      
+
     </main>
 
     <footer class="navbar-default" role="contentinfo">
@@ -127,6 +90,11 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/wm-dom.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.carousel').carousel({interval: 3000});
+      });
+    </script>
   </body>
 
 </html>
