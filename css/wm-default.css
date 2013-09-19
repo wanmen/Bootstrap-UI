@@ -203,6 +203,10 @@ blockquote {
   color: #999999;
 }
 
+.wm-user-photo {
+  margin: 10px 0 6px;
+}
+
 .wm-user-info img {
   width: 100%;
   max-width: 80px;

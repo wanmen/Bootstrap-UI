@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="keywords" content="网络大学，高等教育"/>
     <meta name="description" content="万门大学不仅是一所网络大学，它也是一种信仰，这种信仰来自于我们相信每个人内在的价值，相信大学之道的存在；它更是一次中国高等教育改革的践行——在符合时代特征和发展规律的基础上，对大学精神以及大学教育进行深入的思考和尝试。"/>
-    <title>添加新书 | 万门大学</title>
+    <title>设置个人账号 | 万门大学</title>
     <link rel="stylesheet" href="../css/bootstrap.css" media="screen"/>
     <link rel="stylesheet" href="../css/wm-default.css" media="screen"/>
     <link rel="stylesheet" href="../css/wm-pagedown.css" media="screen"/>
@@ -54,7 +54,22 @@
               </ul>
             </li>
           </ul>
-          <a class="navbar-right navbar-btn btn btn-primary" href="../sign_in.html">登录</a>
+          <div class="navbar-right dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <img class="img-rounded wm-user-photo" src="../img/users/1.jpg" height="32" alt="soliton" title="soliton">
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="1.html"><span class="glyphicon glyphicon-user"></span> 个人主页</a>
+              </li>
+              <li>
+                <a href="edit.html"><span class="glyphicon glyphicon-cog"></span> 账号设置</a>
+              </li>
+              <li>
+                <a href="" data-method="delete"><span class="glyphicon glyphicon-off"></span> 退出</a>
+              </li>
+            </ul>
+          </div>
           <form class="navbar-right navbar-form" action="../search.html" role="search">
             <div class="input-group">
               <input class="form-control" type="search" placeholder="图书，视频，经验贴" title="请输入关键词进行搜索"/>
@@ -72,7 +87,7 @@
     <main class="container" role="main">
       <article class="container">
         <h3 class="page-header text-center">
-          <span class="wm-title">添加新书</span>
+          <span class="wm-title">设置个人账号</span>
           <span class="wm-quick-link">
             <a href="JavaScript:window.history.back();">返回</a>
           </span>
@@ -81,50 +96,50 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
-                <label class="col-sm-3" for="book_cover">封面*</label>
+                <label class="col-sm-3" for="user_photo">头像*</label>
                 <div>
                   <a class="btn btn-default" href="">上传图片</a> <br/>
-                  <input class="col-sm-offset-3 form-control wm-md-top" type="url" id="book_cover" placeholder="请输入封面图片URL(必填)" title="请输入封面图片URL(必填)" required autofocus/>
+                  <input class="col-sm-offset-3 form-control wm-md-top" type="url" id="user_photo" placeholder="请输入头像图片URL(必填)" title="请输入头像图片URL(必填)" value="http://www.wanmen.org/assets/profile.png" required/>
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-3" for="book_title">书名*</label>
-                <input class="form-control" type="text" id="book_title" placeholder="请输入书名(必填)" title="请输入书名(必填)" required/>
+                <label class="col-sm-3" for="user_email">邮箱*</label>
+                <input class="form-control" type="text" id="user_email" placeholder="请输入账号邮箱(必填)" title="请输入账号邮箱(必填)" value="soliton@wanmen.org" required/>
               </div>
               <div class="form-group">
-                <label class="col-sm-3" for="book_author">作者*</label>
-                <input class="form-control" type="text" id="book_author" placeholder="请输入图书作者(必填)" title="请输入图书作者(必填)" required/>
+                <label class="col-sm-3" for="user_name">昵称*</label>
+                <input class="form-control" type="text" id="user_name" placeholder="请输入账号昵称(必填)" title="请输入账号昵称(必填)" value="soliton" required/>
               </div>
               <div class="form-group">
-                <label class="col-sm-3" for="book_translater">译者</label>
-                <input class="form-control" type="text" id="book_translater" placeholder="请输入图书译者" title="请输入图书译者" required/>
+                <label class="col-sm-3" for="user_birthday">生日</label>
+                <input class="form-control" type="text" id="user_birthday" placeholder="请输入你的生日(如1989-09-01)" title="请输入你的生日(如1989-09-01)"/>
               </div>
               <div class="form-group">
-                <label class="col-sm-3" for="book_publisher">出版社</label>
-                <input class="form-control" type="text" id="book_publisher" placeholder="请输入出版社" title="请输入出版社"/>
+                <label class="col-sm-3" for="user_occupation">职业</label>
+                <input class="form-control" type="text" id="user_occupation" placeholder="请输入你的职业" title="请输入你的职业"/>
               </div>
               <div class="form-group">
-                <label class="col-sm-3" for="book_pubdate">出版日期</label>
-                <input class="form-control" type="text" id="book_pubdate" placeholder="请输入出版日期" title="请输入出版日期"/>
+                <label class="col-sm-3" for="user_new_password">新密码</label>
+                <input class="form-control" type="password" id="user_new_password" placeholder="请输入新密码(至少6个字符)" title="请输入新密码(至少6个字符)" required/>
               </div>
               <div class="form-group">
-                <label class="col-sm-3" for="book_dbid">豆瓣ID</label>
-                <input class="form-control" type="number" id="book_dbid" placeholder="请输入豆瓣ID" title="请输入豆瓣ID"/>
+                <label class="col-sm-3" for="user_password_confirmation">密码确认</label>
+                <input class="form-control" type="password" id="user_password_confirmation" placeholder="请再次输入新密码" title="请再次输入新密码"/>
               </div>
               <div class="form-group">
-                <label class="col-sm-3" for="book_url">图书链接</label>
-                <input class="form-control" type="url" id="book_url" placeholder="请输入图书链接URL" title="请输入图书链接URL"/>
+                <label class="col-sm-3" for="user_current_password">当前密码*</label>
+                <input class="form-control" type="password" id="user_current_password" placeholder="请输入当前密码以认证身份(必填)" title="请输入当前密码以认证身份(必填)" required/>
               </div>
             </div>
             <div class="col-sm-5">
               <div class="form-group">
-                <label class="col-sm-offset-1" for="book_summary">简介*</label>
-                <textarea class="col-sm-offset-1 form-control" id="book_summary" rows="18" placeholder="请输入图书简介(必填)" title="请输入图书简介(必填)" required></textarea>
+                <label class="col-sm-offset-1" for="book_summary">个人简介</label>
+                <textarea class="col-sm-offset-1 form-control" id="book_summary" rows="18" placeholder="写一点文字来介绍一下你自己吧！" title="写一点文字来介绍一下你自己吧！" autofocus></textarea>
               </div>
             </div>
           </div>
           <button class="col-sm-offset-5 btn btn-primary" type="submit">完成</button>
-          <button class="btn btn-default wm-md-left" type="reset">重新添加</button>
+          <button class="btn btn-default wm-md-left" type="reset">重新修改</button>
         </form>
       </article>
     </main>
