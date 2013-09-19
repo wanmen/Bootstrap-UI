@@ -58,6 +58,10 @@ blockquote {
   margin-left: 10px;
 }
 
+.wm-lg-left {
+  margin-left: 20px;
+}
+
 .wm-lg-bottom {
   margin-bottom: 20px;
 }
@@ -236,12 +240,8 @@ blockquote {
   margin-bottom: 4px;
 }
 
-.wm-tags-popular {
+.wm-tags-popular div {
   margin-bottom: 4px;
-}
-
-.wm-tag-category {
-  font-size: 15px;
 }
 
 @media (min-width: 768px) {

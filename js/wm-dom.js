@@ -32,6 +32,10 @@
 
   $(window).load(function() {
 
+    if($('body').height() < $(window).height()) {
+      $('footer').addClass('navbar-fixed-bottom');
+    }
+
     $(window).scroll(function () {
       if($(this).scrollTop() > $(window).height()) {
         if(!$('.wm-back-to-top').length) {
