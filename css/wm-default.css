@@ -85,8 +85,26 @@ blockquote {
   font-size: 14px;
 }
 
+.wm-homepage {
+  margin-top: 40px;
+}
+
+.wm-newest h3 {
+  margin: 0;
+}
+
+.wm-newest ul {
+  padding: 5px 0;
+  list-style: none;
+}
+
+.wm-newest li {
+  margin: 10px 20px 0;
+}
+
 .wm-carousel {
-  margin: 30px 15px;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 .wm-carousel img {
@@ -95,14 +113,17 @@ blockquote {
   text-align: center;
 }
 
-.wm-features .tab-content {
-  padding: 20px 0;
-  border: 1px solid #DDDDDD;
-  border-top: none;
+.wm-features h3 {
+  text-align: center;
 }
 
 .wm-features img {
-  width: 100%;
+  height: 36px;
+  margin-right: 7px;
+}
+
+.wm-features p {
+  margin: 20px;
 }
 
 .wm-form label {
@@ -204,6 +225,7 @@ blockquote {
 }
 
 .wm-user-photo {
+  height: 32px;
   margin: 10px 0 6px;
 }
 
