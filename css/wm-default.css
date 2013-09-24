@@ -50,6 +50,11 @@ blockquote {
   display: inline-block;
 }
 
+.wm-reset {
+  margin: 0;
+  padding: 0;
+}
+
 .wm-md-top {
   margin-top: 10px;
 }
