@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="keywords" content="网络大学，高等教育"/>
     <meta name="description" content="万门大学不仅是一所网络大学，它也是一种信仰，这种信仰来自于我们相信每个人内在的价值，相信大学之道的存在；它更是一次中国高等教育改革的践行——在符合时代特征和发展规律的基础上，对大学精神以及大学教育进行深入的思考和尝试。"/>
-    <title>万门图片小课第一弹：轻松理解“分部积分” | 万门大学</title>
+    <title>写经验帖 | 万门大学</title>
     <link rel="stylesheet" href="../css/bootstrap.css" media="screen"/>
     <link rel="stylesheet" href="../css/wm-default.css" media="screen"/>
     <link rel="stylesheet" href="../css/wm-pagedown.css" media="screen"/>
@@ -70,123 +70,52 @@
     </header>
 
     <main class="container" role="main">
-      <article class="col-sm-8">
-        <h3 class="page-header">
-          <span class="wm-title">万门图片小课第一弹：轻松理解“分部积分”</span>
+      <article class="container">
+        <h3 class="page-header text-center">
+          <span class="wm-title">写经验贴</span>
           <span class="wm-quick-link">
-            <a href="new.html">修改</a> |
             <a href="JavaScript:window.history.back();">返回</a>
           </span>
         </h3>
-        <p class="wm-pub-metadata">
-          <a href="../users/1.html">soliton</a> 发布于 2013-09-15 22:27
-          <span class="pull-right">1个标签 | 1个单子 | 2人喜欢 | 2条评论</span>
-        </p>
-        <section class="wm-indent">
-          <p>觉得分部积分很奇怪？不，其实它一点儿也不奇怪，它非常的合理甚至说是美丽。它在理工科公式化简中有极广泛的应用。
-          </p>
-          <p>它的完全体是这样的：如果你把自变量$x$当做参数，$f(x)$和$g(x)$当做两个坐标的话，就会画出下面的图。就好像这是一张二维地图，地图上有一个旅行者戴着手表走路，手表的读数是$x$。当$x$变化，$f(x)$和$g(x)$同时改变，所以我们说$x$是参数。而矩形面积之差又被分割成两块曲面，分别叫做1和2。且1和2分别可以用切割的办法，写成微元的叠加（正如微积分用切割的办法得到曲面面积）。注意微元分别是$g\cdot\mathrm{d}f$和$f\cdot\mathrm{d}g$，如图所示：既然写成叠加，那么分部积分就出来了。
-          </p>
-          <p>怎样？其实很简单吧？万门大学数学系日后将长期推出此系列的图形讲解。让知识理解得更自然，就在万门大学~
-          </p>
-        </section>
-
-        <section class="wm-metadata">
-          <div>
-            <span>标签</span>
-            <a href="">数学</a> |
-            <a href="">微积分</a> &emsp;
-            <span>单子</span>
-            <a href="">万门图片小课</a> &emsp;
-            <span>评分</span> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
-            <form class="wm-inline-block" action="1.html" method="post">
-              <input type="hidden"/>
-              <button class="btn btn-default btn-xs" type="submit">我喜欢</button>
-            </form>
-          </div>
-        </section>
-
-        <hr/>
-
-        <section id="sns_share">
-          <div class="wm-sns-share">
-            <span class="text-muted">分享到</span>
-            <img src="../img/sns/renren.png" height="24" alt="人人" title="分享到人人"/>
-            <img src="../img/sns/douban.png" height="24" alt="豆瓣" title="分享到豆瓣"/>
-            <img src="../img/sns/sina.png" height="24" alt="新浪微博" title="分享到新浪微博"/>
-            <img src="../img/sns/qzone.png" height="24" alt="QQ空间" title="分享到QQ空间"/>
-            <img src="../img/sns/tencent.png" height="24" alt="腾讯微博" title="分享到腾讯微博"/>
-            <a class="btn btn-primary btn-sm wm-quick-link" href="#edit_comments">发表评论</a>
-          </div>
-        </section>
-
-        <section class="wm-comments">
-          <h4 class="text-muted">有2条评论</h4>
-          <div class="row">
-            <figure class="col-sm-2 wm-user-info">
-              <a href="">
-                <img class="img-rounded" src="../img/users/1.jpg" alt="" title="soliton"/>
-              </a>
-            </figure>
-            <div class="col-sm-10 wm-user-comment">
-              <h5>
-                <a href="">soliton</a>
-                <span>2013-09-13 19:26</span>
-              </h5>
-              <p>不错，比喻很贴切。
-              </p>
+        <form class="container form-horizontal wm-form" role="form">
+          <div class="col-sm-10">
+            <div class="form-group">
+              <label class="col-sm-3" for="article_title">标题*</label>
+              <input class="form-control" type="text" id="article_title" placeholder="请输入经验贴标题(必填)" title="请输入经验贴标题(必填)" required/>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3" for="article_author">作者*</label>
+              <input class="form-control" type="text" id="article_author" placeholder="请输入经验贴作者(必填)" title="请输入经验贴作者(必填)" required/>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3" for="article_url">链接</label>
+              <input class="form-control" type="url" id="article_url" placeholder="请输入经验贴链接URL" title="请输入经验贴链接URL"/>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3" for="article_summary">摘要</label>
+              <div class="col-sm-9 wm-reset">
+                <textarea class="form-control" id="article_summary" rows="5" placeholder="请输入经验贴摘要(100字以内)" title="请输入经验贴摘要(100字以内)"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3" for="wmd-input">正文*</label>
+              <div class="col-sm-9 wm-reset">
+                <a class="btn btn-primary btn-sm pull-right" href="../help/editor.html">如何编辑？</a>
+                <br/>
+                <div class="wmd-panel">
+                  <div id="wmd-button-bar"></div>
+                  <textarea class="wmd-input" id="wmd-input" title="请在此编辑经验贴正文" required></textarea>
+                </div>
+                <div class="wmd-panel wmd-preview" id="wmd-preview"></div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-primary" type="submit">完成</button>
+              <button class="btn btn-default wm-md-left" type="reset">重新输入</button>
             </div>
           </div>
-          <hr/>
-          <div class="row">
-            <figure class="col-sm-2 wm-user-info">
-              <a href="">
-                <img class="img-rounded" src="../img/users/2.jpg" alt="" title="photino"/>
-              </a>
-            </figure>
-            <div class="col-sm-10 wm-user-comment">
-              <h5>
-                <a href="">photino</a>
-                <span>2013-09-15 20:46</span>
-              </h5>
-              <p>分部积分和Abel求和公式有密切关系，而Abel部分求和公式有鲜明的几何意义。
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <hr/>
-
-        <section id="edit_comments">
-          <h4 class="text-muted">
-            你的评论
-            <a class="btn btn-primary btn-sm pull-right" href="../help/editor.html">如何编辑？</a>
-          </h4>
-          <form class="form-horizontal" role="form">
-            <div class="wmd-panel">
-              <div id="wmd-button-bar"></div>
-              <textarea class="wmd-input" id="wmd-input"></textarea>
-            </div>
-            <div class="wmd-panel wmd-preview" id="wmd-preview"></div>
-            <button class="btn btn-primary" type="submit">发布</button>
-          </form>
-        </section>
+        </form>
       </article>
-
-      <aside class="col-sm-4">
-        <section class="wm-recommend">
-          <h3 class="page-header">
-            <span class="glyphicon glyphicon-plus-sign"></span> 同主题推荐
-            <a class="wm-quick-link" href="">查看全部</a>
-          </h3>
-          <ul>
-            <li><a href="">用相似三角形证相对论时间膨胀</a></li>
-            <li><a href="">万门大学数学小课：卷积的本质</a></li>
-            <li><a href="">暑期理论物理特训班笔记</a></li>
-            <li><a href="">万门大学系列科普讲座：统计力学概论</a></li>
-          </ul>
-        </section>
-      </aside>
     </main>
 
     <footer class="navbar-default" role="contentinfo">
