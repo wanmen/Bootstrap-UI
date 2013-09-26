@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="keywords" content="网络大学，高等教育"/>
     <meta name="description" content="万门大学不仅是一所网络大学，它也是一种信仰，这种信仰来自于我们相信每个人内在的价值，相信大学之道的存在；它更是一次中国高等教育改革的践行——在符合时代特征和发展规律的基础上，对大学精神以及大学教育进行深入的思考和尝试。"/>
-    <title>登录 | 万门大学</title>
+    <title>帮助中心 | 万门大学</title>
     <link rel="stylesheet" href="css/bootstrap.css" media="screen"/>
     <link rel="stylesheet" href="css/wm-default.css" media="screen"/>
-    <link rel="shortcut icon" href="img/favicon.png"/>
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.js"></script>
@@ -31,7 +31,7 @@
           </button>
           <a class="navbar-brand" href="index.html">万门大学</a>
         </div>
-        <nav class="collapse navbar-collapse" action="search.html" role="navigation">
+        <nav class="collapse navbar-collapse" role="navigation">
           <ul class="nav navbar-nav">
             <li class="active">
               <a class="dropdown-toggle" data-toggle="dropdown" href="books.html">知识库<b class="caret"></b></a>
@@ -68,46 +68,41 @@
       </div>
     </header>
 
-    <main class="container wm-sign" role="main">
-      <div class="col-sm-5 col-md-4 col-sm-offset-1">
-        <h4 class="wm-lg-bottom">欢迎登录万门大学</h4>
-        <form class="form-horizontal" role="form">
-          <div class="form-group">
-            <label class="sr-only control-label" for="user_email">邮箱</label>
-            <div class="col-sm-10">
-              <input class="form-control" type="email" id="user_email" placeholder="邮箱" title="请输入你的账号邮箱" required autofocus>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="sr-only control-label" for="user_password">密码</label>
-            <div class="col-sm-10">
-              <input class="form-control" type="password" id="user_password" placeholder="密码" title="请输入你的账号密码" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-10">
-              <div class="checkbox">
-                <label><input type="checkbox"/>记住我 (下次自动登录)</label>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-10">
-              <button class="btn btn-primary" type="submit">登录</button>
-              <button class="btn btn-default wm-md-left" type="button">忘记密码</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-sm-5 col-sm-offset-1">
-        <h4 class="wm-lg-bottom">你还可以用第三方账号登录</h4>
-        <a class="btn btn-primary wm-sign-button" href="">使用人人账号登录</a>
-        <a class="btn btn-success wm-sign-button" href="">使用豆瓣账号登录</a>
-        <a class="btn btn-danger wm-sign-button" href="">使用新浪微博登录</a>
-        <p>
-          还没有账号？<a href="sign_up.html">马上注册</a>
-        </p>
-      </div>
+    <main class="container" role="main">
+      <article class="col-sm-8">
+        <h3 class="page-header">
+          <span class="wm-title">帮助中心</span>
+          <span class="wm-quick-link">
+            <a href="JavaScript:window.history.back();">返回</a>
+          </span>
+        </h3>
+        <section>
+          <dl>
+            <dt>如何登录万门大学网站？</dt>
+            <dd>在页面导航条的右上角可以看见 <a class="btn btn-primary btn-xs" href="sign_in.html">登录</a> 按钮，点击将跳转到登录页面，输入注册邮箱和密码即可。你还可以用第三方账号(人人、豆瓣或者新浪微博)登录。</dd>
+            <dt>如何在万门注册新账号？</dt>
+            <dd>在 <a class="btn btn-primary btn-xs" href="sign_up.html">注册</a> 页面填写相关信息提交注册后，万门会发送一封注册确认信到你的邮箱，以确认你的唯一身份，你需要通过确认信的链接地址激活帐号完成注册。</dd>
+            <dt>登录密码忘记了，如何找回？</dt>
+            <dd>请在登录页面点击 <a class="btn btn-default btn-xs" href="sign_in.html">忘记密码</a> 按钮，系统会发一封重置密码的信到你的注册邮箱。</dd>
+            <dt>如何使用万门网站上的编辑器？</dt>
+            <dd>我们支持 Markdown 语法，请首先阅读 <a class="btn btn-default btn-xs" href="help/editor.html">编辑器</a> 使用说明。</dd>
+            <dt>为什么我看到的页面显示不正常？</dt>
+            <dd>可能你需要更新一下你的浏览器。对于IE用户，推荐使用IE9以上版本。</dd>
+            <dt>我还有问题怎么办？</dt>
+            <dd>你可以给我们发邮件(support<span class="wm-hidden">.extra</span>@wanmen.org)来寻求帮助。</dd>
+          </dl>
+        </section>
+      </article>
+
+      <aside class="col-sm-4">
+        <section>
+          <h3 class="page-header">
+            <span class="glyphicon glyphicon-envelope"></span> 联系我们
+          </h3>
+          <p>电子邮箱：support<span class="wm-hidden">.extra</span>@wanmen.org
+          </p>
+        </section>
+      </aside>
     </main>
 
     <footer class="navbar-default" role="contentinfo">
@@ -115,9 +110,9 @@
         <address>
           &copy; 2013 万门公益 &ensp; 京ICP备13038614号-1
           <div class="pull-right">
-            <a href="about.html">关于万门</a> &bull;
-            <a href="join_us.html">加入我们</a> &bull;
-            <a href="help.html">帮助中心</a> &bull;
+            <a href="about.html">关于万门</a> |
+            <a href="join_us.html">加入我们</a> |
+            <a href="help.html">帮助中心</a> |
             <a href="terms.html">免责声明</a>
           </div>
         </address>
