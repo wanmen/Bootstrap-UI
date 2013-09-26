@@ -17,6 +17,26 @@ main p {
   line-height: 169%;
 }
 
+article ol li {
+  margin: 1em 0;
+  text-indent: 0px;
+  line-height: 169%;
+}
+
+article dl {
+  margin-left: 2em;
+}
+
+article dt {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+article dd {
+  margin: 0.8em 0 1.6em 2em;
+  line-height: 169%;
+}
+
 aside ul {
   padding-left: 20px;
   line-height: 169%;
