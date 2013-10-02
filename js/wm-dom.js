@@ -73,6 +73,8 @@
       $('.wm-video').hide();
     });
 
+    $('.wm-video').draggable();
+
   });
 
 })(jQuery);
