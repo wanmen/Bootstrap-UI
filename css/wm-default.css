@@ -221,13 +221,9 @@ blockquote {
   z-index: 1000;
 }
 
-.wm-video div {
-  height: 400px;
-}
-
 .wm-video iframe {
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 
 .wm-sns-share img {
