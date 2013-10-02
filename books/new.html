@@ -78,53 +78,59 @@
           </span>
         </h3>
         <form class="container form-horizontal wm-form" role="form">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label class="col-sm-3" for="book_cover">封面*</label>
-                <div>
-                  <a class="btn btn-default" href="">上传图片</a> <br/>
-                  <input class="col-sm-offset-3 form-control wm-md-top" type="url" id="book_cover" placeholder="请输入封面图片URL(必填)" title="请输入封面图片URL(必填)" required autofocus/>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3" for="book_title">书名*</label>
-                <input class="form-control" type="text" id="book_title" placeholder="请输入书名(必填)" title="请输入书名(必填)" required/>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3" for="book_author">作者*</label>
-                <input class="form-control" type="text" id="book_author" placeholder="请输入图书作者(必填)" title="请输入图书作者(必填)" required/>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3" for="book_translater">译者</label>
-                <input class="form-control" type="text" id="book_translater" placeholder="请输入图书译者" title="请输入图书译者" required/>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3" for="book_publisher">出版社</label>
-                <input class="form-control" type="text" id="book_publisher" placeholder="请输入出版社" title="请输入出版社"/>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3" for="book_pubdate">出版日期</label>
-                <input class="form-control" type="text" id="book_pubdate" placeholder="请输入出版日期" title="请输入出版日期"/>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3" for="book_dbid">豆瓣ID</label>
-                <input class="form-control" type="number" id="book_dbid" placeholder="请输入豆瓣ID" title="请输入豆瓣ID"/>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3" for="book_url">图书链接</label>
-                <input class="form-control" type="url" id="book_url" placeholder="请输入图书链接URL" title="请输入图书链接URL"/>
+          <div class="col-sm-10">
+            <div class="form-group">
+              <label class="col-sm-3" for="book_cover">封面*</label>
+              <div>
+                <a class="btn btn-default" href="">上传图片</a> <br/>
+                <input class="col-sm-offset-3 form-control wm-md-top" type="url" id="book_cover" placeholder="请输入封面图片URL(必填)" title="请输入封面图片URL(必填)" required autofocus/>
               </div>
             </div>
-            <div class="col-sm-5">
-              <div class="form-group">
-                <label class="col-sm-offset-1" for="book_summary">简介*</label>
-                <textarea class="col-sm-offset-1 form-control" id="book_summary" rows="18" placeholder="请输入图书简介(必填)" title="请输入图书简介(必填)" required></textarea>
+            <div class="form-group">
+              <label class="col-sm-3" for="book_title">书名*</label>
+              <input class="form-control" type="text" id="book_title" placeholder="请输入书名(必填)" title="请输入书名(必填)" required/>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3" for="book_author">作者*</label>
+              <input class="form-control" type="text" id="book_author" placeholder="请输入图书作者(必填)" title="请输入图书作者(必填)" required/>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3" for="book_translater">译者</label>
+              <input class="form-control" type="text" id="book_translater" placeholder="请输入图书译者" title="请输入图书译者" required/>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3" for="book_publisher">出版社</label>
+              <input class="form-control" type="text" id="book_publisher" placeholder="请输入出版社" title="请输入出版社"/>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3" for="book_pubdate">出版日期</label>
+              <input class="form-control" type="text" id="book_pubdate" placeholder="请输入出版日期" title="请输入出版日期"/>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3" for="book_dbid">豆瓣ID</label>
+              <input class="form-control" type="number" id="book_dbid" placeholder="请输入豆瓣ID" title="请输入豆瓣ID"/>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3" for="book_url">图书链接</label>
+              <input class="form-control" type="url" id="book_url" placeholder="请输入图书链接URL" title="请输入图书链接URL"/>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3" for="wmd-input">书评*</label>
+              <div class="col-sm-9 wm-reset">
+                <a class="btn btn-primary btn-sm pull-right" href="../help/editor.html">如何编辑？</a>
+                <br/>
+                <div class="wmd-panel">
+                  <div id="wmd-button-bar"></div>
+                  <textarea class="wmd-input" id="wmd-input" title="请在此编辑经验贴正文" required></textarea>
+                </div>
+                <div class="wmd-panel wmd-preview" id="wmd-preview"></div>
               </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-primary" type="submit">完成</button>
+              <button class="btn btn-default wm-md-left" type="reset">重新输入</button>
             </div>
           </div>
-          <button class="col-sm-offset-5 btn btn-primary" type="submit">完成</button>
-          <button class="btn btn-default wm-md-left" type="reset">重新添加</button>
         </form>
       </article>
     </main>
@@ -146,6 +152,52 @@
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/wm-dom.js"></script>
+    <script src="../js/Markdown.Converter.js"></script>
+    <script src="../js/Markdown.Sanitizer.js"></script>
+    <script src="../js/Markdown.Editor.js"></script>
+    <script src="../js/Markdown.Extra.js"></script>
+    <script src="../js/Markdown.local.zh.js"></script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        messageStyle: "none",
+        tex2jax: {inlineMath: [["$", "$"], ["\\(", "\\)"]]}
+      });
+    </script>
+    <script type="text/javascript">
+      (function() {
+        var QUEUE = MathJax.Hub.queue,
+          math = null;
+
+        QUEUE.Push(function() {
+          math = MathJax.Hub.getAllJax('#wmd-preview')[0];
+        });
+
+        window.UpdateMath = function(TeX) {
+          $('wmd-preview').html(TeX);
+          MathJax.Hub.Queue(['Typeset', math, 'wmd-preview']);
+        }
+
+        $('#wmd-input').keypress(function(event) {
+          UpdateMath($(this).val());
+        });
+
+      })();
+    </script>
+    <script type="text/javascript">
+      (function () {
+        var converter = Markdown.getSanitizingConverter();
+        converter.hooks.chain('preBlockGamut', function(text, rbg) {
+          return text.replace(/^ {0,3}""" *\n((?:.*?\n)+?) {0,3}""" *$/gm,
+            function (whole, inner) {
+              return "<blockquote>" + rbg(inner) + '</blockquote>\n';
+          });
+        });
+
+        var editor = new Markdown.Editor(converter, null, {strings: Markdown.local.zh});
+        editor.run();
+      })();
+    </script>
   </body>
 
 </html>

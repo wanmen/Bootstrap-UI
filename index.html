@@ -203,8 +203,6 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $('.carousel').carousel({interval: 3000});
-      });
-      $(window).load(function() {
         var num = $('.carousel img').height() / 33 - 1;
         $('.wm-newest li').slice(Math.floor(num)).addClass('wm-hidden');
       });
