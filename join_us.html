@@ -197,17 +197,17 @@
     <script src="js/wm-dom.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        var flip = 1;
         $('a[href*=#expand]').click(function() {
-          if(flip++ % 2) {
+          var text = $(this).text();
+          if(text.slice(0, 2) == '展开') {
             $(this).html('隐藏更多内容&raquo;');
             $(this).parent().siblings().removeClass('wm-hidden');
           } else {
             $(this).html('展开更多内容&raquo;');
             $(this).parent().siblings().addClass('wm-hidden');
           }
+          return false;
         });
-        return false;
       });
     </script>
   </body>
