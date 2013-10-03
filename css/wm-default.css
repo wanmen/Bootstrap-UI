@@ -54,12 +54,20 @@ blockquote {
   border-left: 2px dotted #428BCA;
 }
 
+.glyphicon {
+  font-size: 83.3%;
+}
+
 .page-header + .wm-pub-metadata {
   margin-top: -14px;
 }
 
 .wm-hidden {
   display: none;
+}
+
+.wm-italic {
+  font-style: italic;
 }
 
 .wm-inline-block {
@@ -152,6 +160,25 @@ blockquote {
   margin-top: 7px;
   font-weight: normal;
   text-align: right;
+}
+
+.wm-general h4 {
+  margin: 24px 0 14px;
+  text-indent: 0;
+}
+
+.wm-general ul {
+  margin: 0 0 1em;
+}
+
+.wm-general li {
+  margin: 4px 0 4px 18px;
+  text-indent: 0;
+}
+
+.wm-general li ul {
+  padding-left: 10px;
+  list-style: outside disc;
 }
 
 .wm-sign {
