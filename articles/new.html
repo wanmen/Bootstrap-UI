@@ -157,7 +157,7 @@
         });
 
         window.UpdateMath = function(TeX) {
-          $('wmd-preview').html(TeX);
+          $('#wmd-preview').html(TeX);
           MathJax.Hub.Queue(['Typeset', math, 'wmd-preview']);
         }
 
