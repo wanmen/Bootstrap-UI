@@ -20,6 +20,8 @@
         '&amp;title=' + encodeURIComponent(document.title));
     });
 
+    $('.alert').show().delay(4000).fadeOut(1000);
+
     $(this).on('click', 'a[href^="http"]', function() {
       if(!RegExp(host).test(this.href)) {
         window.open(this.href);
