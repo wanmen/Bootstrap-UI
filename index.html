@@ -58,33 +58,30 @@
 
     <main class="container" role="main">
       <article class="container">
-        <section class="container row wm-projects">
-          <div class="col-sm-3">
-            <img src="img/projects/global.png" height="40" alt=""/>
-            <h3 data-content="万门大学属于我们每一个人。无论是来自国内外名师的肯定与鼓励，亦或是来自大家的支持和建议；一句真心的称赞，一番中肯的批评，这些都激励并鞭策着万门大学不断前进。">我与万门</h3>
+        <section class="container wm-projects">
+          <div data-content="万门大学属于我们每一个人。无论是来自国内外名师的肯定与鼓励，亦或是来自大家的支持和建议；一句真心的称赞，一番中肯的批评，这些都激励并鞭策着万门大学不断前进。">
+            <span class="glyphicon glyphicon-user"></span>
+            <h3>我与万门</h3>
           </div>
 
-          <div class="col-sm-3">
-            <img src="img/projects/monitor.png" height="40" alt=""/>
-            <h3 data-content="在大学，我们不应仅局限于某一专业，更要发展综合知识能力，以成为一个完整的人；在大学，我们收获知识之余，更要学会思考自我，思考世界，从而追求一种富有意义的人生。万门课堂，随时，随地，让这些成为可能。">万门课堂</h3>
+          <div data-content="在大学，我们不应仅局限于某一专业，更要发展综合知识能力，以成为一个完整的人；在大学，我们收获知识之余，更要学会思考自我，思考世界，从而追求一种富有意义的人生。万门课堂，随时，随地，让这些成为可能。">
+            <span class="glyphicon glyphicon-eye-open"></span>
+            <h3>万门课堂</h3>
           </div>
 
-          <div class="col-sm-3">
-            <img src="img/projects/library.png" height="40" alt=""/>
-            <h3 data-content="网络时代，我们不再担忧资源总量，但系统性的筛选和整理必不可少；信息横流，我们不再苦于缺少观点，而要勇敢发出属于自己的声音。万门图书馆，一个精炼的资料库，一个属于我们自己的平台。">
-              万门图书馆
-            </h3>
+          <div data-content="网络时代，我们不再担忧资源总量，但系统性的筛选和整理必不可少；信息横流，我们不再苦于缺少观点，而要勇敢发出属于自己的声音。万门图书馆，一个精炼的资料库，一个属于我们自己的平台。">
+            <span class="glyphicon glyphicon-globe"></span>
+            <h3>万门图书馆</h3>
           </div>
 
-          <div class="col-sm-3">
-            <img src="img/projects/wanmenX.png" height="40" alt=""/>
-            <h3 data-content="浮躁功利的环境里，我们需要追求知识的那份纯粹；慵懒沉寂的风气下，我们需要自我改变的那种决心。我们的大学需要这样一种氛围，我们的校园需要这样一个团体——万门大学X。">
-              万门大学X
-            </h3>
+          <div data-content="浮躁功利的环境里，我们需要追求知识的那份纯粹；慵懒沉寂的风气下，我们需要自我改变的那种决心。我们的大学需要这样一种氛围，我们的校园需要这样一个团体——万门大学X。">
+            <span class="glyphicon glyphicon-flag"></span>
+            <h3>万门大学X</h3>
           </div>
         </section>
       </article>
     </main>
+
 
     <footer class="navbar-default" role="contentinfo">
       <div class="container">
@@ -105,9 +102,9 @@
     <script src="js/wm-dom.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $('.wm-projects h3').popover({
+        $('.wm-projects div').popover({
           animation: true,
-          placement: 'top',
+          placement: 'auto right',
           trigger: 'hover',
           container: 'body'
         });

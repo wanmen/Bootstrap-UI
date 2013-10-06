@@ -90,6 +90,11 @@ header.navbar a:hover {
   font-size: 83.3%;
 }
 
+.popover {
+  padding-left: 4px;
+  line-height: 169%;
+}
+
 .page-header + .wm-pub-metadata {
   margin-top: -14px;
 }
@@ -156,23 +161,29 @@ header.navbar a:hover {
 }
 
 .wm-projects {
-  margin: 20px 0;
+  margin: 0 auto;
   text-align: center;
 }
 
-.wm-projects .popover {
-  padding: 0;
+.wm-projects div {
+  display: inline-block;
+  width: 20%;
+  margin: 20px 2%;
+  padding: 20px 2%;
+  cursor: help;
+  background-color: #EEE;
+  border-radius: 8px;
 }
 
-.wm-projects img {
+.wm-projects .glyphicon {
   display: block;
-  margin: 20px auto;
+  font-size: 32px;
+  color: #428BCA;
 }
 
 .wm-projects h3 {
   color: #428BCA;
   text-shadow: 1px 1px 2px #428BCA;
-  cursor: help;
 }
 
 .wm-form label {
