@@ -19,9 +19,9 @@
     <![endif]-->
   </head>
 
-  <body class="wm-homepage">
+  <body>
 
-    <header class="navbar navbar-fixed-top" role="banner">
+<header class="navbar navbar-fixed-top" role="banner">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -52,33 +52,57 @@
       </div>
     </header>
 
-    <main class="" role="main">
-      <div class="wm-banner">
-        <img src="img/wm-banner.jpg" alt=""/>
-      </div>
-        <section class="wm-projects">
-          <div>
-            <img src="img/projects/participant.png" height="50" alt=""/>
-            <h3 data-content="万门大学属于我们每一个人。无论是来自国内外名师的肯定与鼓励，亦或是来自大家的支持和建议；一句真心的称赞，一番中肯的批评，这些都激励并鞭策着万门大学不断前进。">我与万门</h3>
+    <main class="container" role="main">
+      <article class="container">
+        <section class="wm-banner">
+          <img src="img/wm-banner.jpg" alt=""/>
+        </section>
+
+        <section class="container wm-logo">
+         <img src="img/favicon.png" height="80" alt=""/>
+         <p>以 “独立之思考，求实之精神，人文之情怀” 为立校精神的万门大学，将和万千青年人一起打开自我内心深处的那扇大门，唤起自我改变的力量，从而让智慧与美德的光芒照亮世界。
+         </p>
+        </section>
+
+        <section class="row wm-projects">
+          <div class="col-sm-3">
+            <figure>
+              <img src="img/projects/participant.png" height="50" alt=""/>
+              <figcaption>我与万门</figcaption>
+            </figue>
+            <p>万门大学属于我们每一个人。无论是来自国内外名师的肯定与鼓励，亦或是来自大家的支持和建议；一句真心的称赞，一番中肯的批评，这些都激励并鞭策着万门大学不断前进。
+            </p>
           </div>
 
-          <div>
-            <img src="img/projects/courses.png" height="50" alt=""/>
-            <h3 data-content="在大学，我们不应仅局限于某一专业，更要发展综合知识能力，以成为一个完整的人；在大学，我们收获知识之余，更要学会思考自我，思考世界，从而追求一种富有意义的人生。万门课堂，随时，随地，让这些成为可能。">万门课堂</h3>
+          <div class="col-sm-3">
+            <figure>
+              <img src="img/projects/courses.png" height="50" alt=""/>
+              <figcaption>万门课堂</figcaption>
+            </figue>
+            <p>在大学，我们不应仅局限于某一专业，更要发展综合知识能力，以成为一个完整的人；我们在收获知识之余，更要学会思考自我，思考世界，从而追求一种富有意义的人生。
+            </p>
           </div>
 
-          <div>
-            <img src="img/projects/library.png" height="50" alt=""/>
-            <h3 data-content="网络时代，我们不再担忧资源总量，但系统性的筛选和整理必不可少；信息横流，我们不再苦于缺少观点，而要勇敢发出属于自己的声音。万门图书馆，一个精炼的资料库，一个属于我们自己的平台。">万门图书馆</h3>
+          <div class="col-sm-3">
+            <figure>
+              <img src="img/projects/library.png" height="50" alt=""/>
+              <figcaption>万门图书馆</figcaption>
+            </figue>
+            <p>网络时代，我们不再担忧资源总量，但系统性的筛选和整理必不可少；信息横流，我们不再苦于缺少观点，而要勇敢发出自己的声音。万门图书馆，一个属于我们自己的平台。
+            </p>
           </div>
 
-          <div>
-            <img src="img/projects/wanmenX.png" height="50" alt=""/>
-            <h3 data-content="浮躁功利的环境里，我们需要追求知识的那份纯粹；慵懒沉寂的风气下，我们需要自我改变的那种决心。我们的大学需要这样一种氛围，我们的校园需要这样一个团体——万门大学X。">万门大学X</h3>
+          <div class="col-sm-3">
+            <figure>
+              <img src="img/projects/wanmenX.png" height="50" alt=""/>
+              <figcaption>万门大学X</figcaption>
+            </figue>
+            <p>浮躁功利的环境里，我们需要追求知识的那份纯粹；慵懒沉寂的风气下，我们需要自我改变的那种决心。静心笃学，自由讨论，积极分享——我们的校园需要这样一个团体。
+            </p>
           </div>
         </section>
+      </article>
     </main>
-
 
     <footer class="navbar-default" role="contentinfo">
       <div class="container">
@@ -97,16 +121,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/wm-dom.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.wm-projects h3').popover({
-          animation: true,
-          placement: 'top',
-          trigger: 'hover',
-          container: 'body'
-        });
-      });
-    </script>
   </body>
 
 </html>

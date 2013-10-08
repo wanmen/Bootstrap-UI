@@ -61,8 +61,12 @@ header.navbar {
   border-bottom: 1px solid #C0C0C0;
 }
 
-header.navbar ul.navbar-nav li {
-  border-left: 1px solid #FFF;
+header.navbar .navbar-toggle {
+  border: 1px solid #FFFFFF;
+}
+
+header.navbar .icon-bar {
+  background: #FFFFFF;
 }
 
 header.navbar .navbar-brand {
@@ -70,7 +74,7 @@ header.navbar .navbar-brand {
 }
 
 header.navbar a {
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 header.navbar a.navbar-btn {
@@ -79,15 +83,11 @@ header.navbar a.navbar-btn {
 
 header.navbar a:hover {
   color: #428BCA;
-  background: #FFF;
+  background: #FFFFFF;
   transition: background 0.3s ease-in, color 0.3s ease-out;
   -moz-transition: background 0.3s ease-in, color 0.3s ease-out;
   -webkit-transition: background 0.3s ease-in, color 0.3s ease-out;
   -o-transition: background 0.3s ease-in, color 0.3s ease-out;
-}
-
-footer.navbar-default {
-  background-color: #E0EBFF;
 }
 
 .glyphicon {
@@ -155,46 +155,62 @@ footer.navbar-default {
   font-size: 14px;
 }
 
-.wm-homepage {
-  background-color: #EDF7FE;
-  background-image: radial-gradient(center, #FFF, #E0EBFF); 
-  background-image: -webkit-radial-gradient(center, #FFF, #E0EBFF); 
-  background-image: -moz-radial-gradient(center, #FFF, #E0EBFF);
-  background-image: -ms-radial-gradient(center, #FFF, #E0EBFF);
-  background-image: -o-radial-gradient(center, #FFF, #E0EBFF);
-}
-
 .wm-banner {
   width: 100%;
-  margin-top: -10px;
+  margin: 40px 0 0;
 }
 
 .wm-banner img {
   width: 100%;
+  border-radius: 10px;
 }
 
-.wm-projects {
-  margin: 0 auto;
+.wm-logo {
+  margin: 40px auto;
   text-align: center;
 }
 
-.wm-projects div {
+.wm-logo img {
   display: inline-block;
-  width: 20%;
-  margin: 30px 2%;
-  padding: 20px 2%;
-  cursor: help;
-  border-radius: 8px;
+  margin: 0 20px;
+  vertical-align: top;
+}
+
+.wm-logo p {
+  display: inline-block;
+  width: 520px;
+  margin: 0;
+  font-size: 16px;
+  text-indent: 2em;
+  text-align: justify;
+  color: #428BCA;
+}
+
+.wm-projects {
+  text-align: center;
+}
+
+.wm-projects figure {
+  background-color: #EEEEEE;
+  border-radius: 10px;
 }
 
 .wm-projects img {
-  display: block;
-  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 18px;
 }
 
-.wm-projects h3 {
-  margin-top: 10px;
-  color: #428BCA;
+.wm-projects figcaption {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #999999;
+}
+
+.wm-projects p {
+  padding: 10px;
+  text-align: justify;
+  color: #FFFFFF;
+  background-color: #428BCA;
 }
 
 .wm-form label {
@@ -207,7 +223,6 @@ footer.navbar-default {
 .wm-general h4 {
   margin: 24px 0 14px;
   text-indent: 0;
-  color: #468847;
 }
 
 .wm-general ul {
@@ -283,7 +298,7 @@ footer.navbar-default {
   position: fixed;
   top: 100px;
   padding: 0 20px 20px;
-  background-color: #FFFFFF;
+  background-color: #FFFFFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 7px;
   box-shadow: 0px 6px 12px rgba(0,​ 0,​ 0,​ 0.176);
@@ -374,6 +389,15 @@ footer.navbar-default {
   }
   .wm-form input {
     width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  header.navbar li {
+    border-top: 1px solid #FFF;
+  }
+  .wm-logo p {
+    width: 78%;
   }
 }
 
