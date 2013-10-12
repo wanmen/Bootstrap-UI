@@ -2,6 +2,7 @@
 body {
   padding-top: 60px;
   text-align: justify;
+  font-family: STXihei, Arial, sans-serif;
 }
 
 main {
@@ -136,6 +137,10 @@ header.navbar a:hover {
   margin-bottom: 20px;
 }
 
+.wm-skip-top {
+  margin-top: 40px;
+}
+
 .wm-indent {
   margin: 1em 0;
   text-indent: 2em;
@@ -184,6 +189,10 @@ header.navbar a:hover {
   text-indent: 2em;
   text-align: justify;
   color: #428BCA;
+}
+
+.wm-carousel img {
+  width: 100%;
 }
 
 .wm-projects {
