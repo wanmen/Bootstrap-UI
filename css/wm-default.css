@@ -74,15 +74,15 @@ header.navbar .icon-bar {
   background-color: #7E8691;
 }
 
-header.navbar a {
-  color: #7E8691;
-}
-
 header.navbar a.navbar-brand {
   padding: 10px 15px 0;
 }
 
-header.navbar a:hover {
+header.navbar li a {
+  color: #7E8691;
+}
+
+header.navbar li a:hover {
   color: #428BCA;
 }
 
