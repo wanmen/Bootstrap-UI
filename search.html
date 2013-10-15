@@ -75,7 +75,10 @@
         </h3>
         <section>
           <div class="checkbox wm-search-type">
-            <label><input type="checkbox" checked/>普通类型</label>
+            <label>
+              <input type="checkbox" checked/>普通类型
+              <span class="badge pull-right">100</span>
+            </label>
           </div>
           <div class="wm-lg-left">
             <div class="checkbox">
@@ -131,10 +134,19 @@
       <article class="col-sm-9">
         <h3 class="page-header">
           搜索结果 <span class="text-muted">(共203项)</span>
-          <span class="wm-quick-link">
-            <a href="JavaScript:window.history.back();">返回</a>
-          </span>
         </h3>
+        <form class="wm-inline-search pull-right" role="search" method="get" action="/search">
+          <div class="input-group">
+            <input type="hidden" name="type" value="book,video,article">
+            <input type="hidden" name="list" value="book,video,article,mix">
+            <input class="form-control" type="search" name="title" placeholder="图书，视频，经验贴，标签" title="请输入关键词进行搜索"/>
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
+        </form>
         <section>
           <div>
             <h4>[图书] <a href="books/1.html">枪炮、病菌与钢铁</a></h4>
@@ -142,7 +154,7 @@
               <a href="users/1.html">soliton</a> 发布于 2013-09-14 21:27
               <span class="pull-right">4个标签 | 1个单子 | 2人喜欢 | 2条评论</span>
             </p>
-            <p>(本书评由杨洵默先生完成，感谢他对万门大学的无私帮助。）首先这是一本畅销书，所以完全你无需担心看不懂。作者杰拉德·戴蒙德（Jared Diamond)是UCLA的地理学教授，一个出色的鸟类学家，不过却写了这样一本历史书。看似奇怪，其实他想要回答的问题是必须要有他那样广博的知识才能处理的。全书主题在前言就清楚的提出来了，戴蒙德想回答一个恐怕很多人都曾经想过的问题：大概十万年前现代智人走出非洲，一万年前最终进入美洲从而占据了各宜居大洲 ... <a href="books/1.html">继续阅读</a>
+            <p>(本书评由杨洵默先生完成，感谢他对万门大学的无私帮助。）首先这是一本畅销书，所以完全你无需担心看不懂。作者杰拉德·戴蒙德（Jared Diamond)是UCLA的地理学教授，一个出色的鸟类学家，不过却写了这样一本历史书。看似奇怪，其实他想要回答的问题是必须要有他那样广博的知识才能处理的。全书主题在前言就清楚的提出来了，戴蒙德想回答一个恐怕很多人都曾经想过的问题：大概十万年前现代智人走出非洲，一万年前最终进入美洲从而占据了各宜居大洲 ... <a class="wm-italic" href="books/1.html">继续阅读&raquo;</a>
             </p>
           </div>
           <hr/>
@@ -154,7 +166,7 @@
             </p>
             <p>斯坦福大学的企业思想领袖论坛由每周一次的系列演讲构成，其演讲者为来自商业，金融，科技，教育，和慈善领域的具有创新精神的领导们。他们将与世界各地有抱负的企业家们一起分享他们的见解。
 
-兰迪·可米萨为硅谷资深风险投资人，早年从事过多种行业，积累了丰富的社会经验，其A计划与B计划理论不论对新兴企业还是成熟企业都有积极的作用 ... <a href="videos/1.html">继续阅读</a>
+兰迪·可米萨为硅谷资深风险投资人，早年从事过多种行业，积累了丰富的社会经验，其A计划与B计划理论不论对新兴企业还是成熟企业都有积极的作用 ... <a class="wm-italic" href="videos/1.html">继续阅读&raquo;</a>
             </p>
           </div>
           <hr/>
@@ -164,25 +176,20 @@
               <a href="users/1.html">soliton</a> 发布于 2013-09-15 18:45
               <span class="pull-right">2个标签 | 1个单子 | 2人喜欢 | 2条评论</span>
             </p>
-            <p>觉得分部积分很奇怪？不，其实它一点儿也不奇怪，它非常的合理甚至说是美丽。它在理工科公式化简中有极广泛的应用。它的完全体是这样的：如果你把自变量$x$当做参数，$f(x)$和$g(x)$当做两个坐标的话，就会画出下面的图。就好像这是一张二维地图，地图上有一个旅行者戴着手表走路，手表的读数是$x$。当$x$变化，$f(x)$和$g(x)$同时改变，所以我们说$x$是参数。而矩形面积之差又被分割成两块曲面，分别叫做1和2。且1和2分别可以用切割的办法，写成微元的叠加（正如微积分用切割的办法得到曲面面积）... <a href="articles/1.html">继续阅读</a>
+            <p>觉得分部积分很奇怪？不，其实它一点儿也不奇怪，它非常的合理甚至说是美丽。它在理工科公式化简中有极广泛的应用。它的完全体是这样的：如果你把自变量$x$当做参数，$f(x)$和$g(x)$当做两个坐标的话，就会画出下面的图。就好像这是一张二维地图，地图上有一个旅行者戴着手表走路，手表的读数是$x$。当$x$变化，$f(x)$和$g(x)$同时改变，所以我们说$x$是参数。而矩形面积之差又被分割成两块曲面，分别叫做1和2。且1和2分别可以用切割的办法，写成微元的叠加（正如微积分用切割的办法得到曲面面积）... <a class="wm-italic" href="articles/1.html">继续阅读&raquo;</a>
             </p>
           </div>
         </section>
 
         <section class="text-center">
          <ul class="pagination">
-           <li class="disabled"><a href="上一页">&laquo;</a></li>
-           <li class="active"><a href="#">1</a></li>
-           <li><a href="#">2</a></li>
-           <li><a href="#">3</a></li>
-           <li><a href="#">4</a></li>
-           <li><a href="#">5</a></li>
-           <li><a href="#">6</a></li>
-           <li><a href="#">7</a></li>
-           <li><a href="#">8</a></li>
-           <li><a href="#">9</a></li>
-           <li><a href="#">10</a></li>
-           <li><a href="#" title="下一页">&raquo;</a></li>
+           <li class="disabled"><a href="#prev" title="上一页">&laquo;</a></li>
+           <li class="active"><a href="#page_1">1</a></li>
+           <li><a href="#page_2">2</a></li>
+           <li><a href="#page_3">3</a></li>
+           <li><a href="#page_4">4</a></li>
+           <li><a href="#page_5">5</a></li>
+           <li><a href="#next" title="下一页">&raquo;</a></li>
          </ul>
         </section>
       </article>
@@ -216,14 +223,14 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $('.wm-search-type :checkbox').on('click', function() {
-          if(this.checked) {
-            $(this).parentsUntil('aside').find(':checkbox').prop('checked', true);
-          }
+          $(this).parentsUntil('aside').find(':checkbox')
+            .prop('checked', (this.checked ? true : false));
         });
         $('.wm-lg-left :checkbox').on('click', function() {
-          if(!this.checked) {
-            $(this).parentsUntil('aside').find('.wm-search-type :checkbox').prop('checked', false);
-          }
+          var $_parent = $(this).parentsUntil('section');
+          $(this).parentsUntil('aside').find('.wm-search-type :checkbox')
+            .prop('checked', $_parent.find('input:checked').length ==
+              $_parent.find('input').length);
         });
       });
     </script>

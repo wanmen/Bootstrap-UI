@@ -2,6 +2,7 @@
 body {
   padding-top: 60px;
   text-align: justify;
+  font-family: "Microsoft YaHei", "Apple LiGothic Medium", "Droid Sans Fallback", Arial, sans-serif;
 }
 
 main {
@@ -43,15 +44,59 @@ aside ul {
   list-style: outside square;
 }
 
+footer {
+  background-image: url("../img/bg-footer.png");
+}
+
 footer address {
-  margin: 10px 0;
-  color: #999999;
+  margin: 15px 0;
+  color: #FFF;
+}
+
+footer address img {
+  margin: -15px 0;
+}
+
+footer address a {
+  color: #FFF;
+}
+
+footer address a:hover {
+  color: #428BCA;
 }
 
 blockquote {
   padding-left: 4px;
   background: #F5F5F5;
   border-left: 2px dotted #428BCA;
+}
+
+header.navbar {
+  font-size: 18px;
+  font-weight: normal;
+  background-image: url("../img/bg-header.jpg");
+  background-repeat: repeat-x;
+  border-bottom: 1px solid #C0C0C0;
+}
+
+header.navbar .navbar-toggle {
+  border: 1px solid #7E8691;
+}
+
+header.navbar .icon-bar {
+  background-color: #7E8691;
+}
+
+header.navbar a.navbar-brand {
+  padding: 10px 15px 0;
+}
+
+header.navbar li a {
+  color: #7E8691;
+}
+
+header.navbar li a:hover {
+  color: #428BCA;
 }
 
 .glyphicon {
@@ -95,6 +140,10 @@ blockquote {
   margin-bottom: 20px;
 }
 
+.wm-skip-top {
+  margin-top: 40px;
+}
+
 .wm-indent {
   margin: 1em 0;
   text-indent: 2em;
@@ -114,45 +163,46 @@ blockquote {
   font-size: 14px;
 }
 
-.wm-homepage {
-  margin-top: 40px;
+.wm-banner {
+  width: 100%;
+  margin: 30px 0 20px;
 }
 
-.wm-newest h3 {
-  margin: 0;
+.wm-banner img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.wm-newest ul {
-  padding: 5px 0;
-  list-style: none;
-}
-
-.wm-newest li {
-  margin: 10px 20px 0;
-}
-
-.wm-carousel {
-  margin-bottom: 20px;
-  padding: 0;
+.wm-banner a {
+  display: inline-block;
+  margin: -40% 0 0 54%;
+  z-index: 100;
 }
 
 .wm-carousel img {
   width: 100%;
-  margin: 0 auto;
+}
+
+.wm-projects {
   text-align: center;
+  background-image: url("../img/bg-project.png");
+  border-radius: 10px;
 }
 
-.wm-features h3 {
-  text-align: center;
+.wm-projects img {
+  margin-top: 20px;
+  font-size: 18px;
 }
 
-.wm-features img {
-  height: 36px;
-  margin-right: 7px;
+.wm-projects figcaption {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #2884DB;
 }
 
-.wm-features p {
-  margin: 20px;
+.wm-projects p {
+  padding: 10px;
+  text-align: justify;
 }
 
 .wm-form label {
@@ -165,7 +215,6 @@ blockquote {
 .wm-general h4 {
   margin: 24px 0 14px;
   text-indent: 0;
-  color: #468847;
 }
 
 .wm-general ul {
@@ -241,7 +290,7 @@ blockquote {
   position: fixed;
   top: 100px;
   padding: 0 20px 20px;
-  background-color: #FFFFFF;
+  background-color: #FFFFFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 7px;
   box-shadow: 0px 6px 12px rgba(0,​ 0,​ 0,​ 0.176);
@@ -320,6 +369,11 @@ blockquote {
   margin-bottom: 4px;
 }
 
+.wm-inline-search {
+  width: 60%;
+  margin-top: -40px;
+}
+
 @media (min-width: 768px) {
   .navbar-form {
     width: 28%;
@@ -327,6 +381,12 @@ blockquote {
   }
   .wm-form input {
     width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  header.navbar li {
+    border-top: 1px solid #7E8691;
   }
 }
 
