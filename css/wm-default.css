@@ -44,13 +44,25 @@ aside ul {
   list-style: outside square;
 }
 
+footer {
+  background-image: url("../img/bg-footer.png");
+}
+
 footer address {
   margin: 15px 0;
-  color: #999999;
+  color: #FFF;
 }
 
 footer address img {
   margin: -15px 0;
+}
+
+footer address a {
+  color: #FFF;
+}
+
+footer address a:hover {
+  color: #428BCA;
 }
 
 blockquote {
@@ -62,7 +74,8 @@ blockquote {
 header.navbar {
   font-size: 18px;
   font-weight: normal;
-  background-color: #F7F7F7;
+  background-image: url("../img/bg-header.jpg");
+  background-repeat: repeat-x;
   border-bottom: 1px solid #C0C0C0;
 }
 
@@ -172,7 +185,7 @@ header.navbar li a:hover {
 
 .wm-projects {
   text-align: center;
-  background-color: #EEEEEE;
+  background-image: url("../img/bg-project.png");
   border-radius: 10px;
 }
 
