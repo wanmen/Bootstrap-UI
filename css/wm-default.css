@@ -74,8 +74,10 @@ blockquote {
 header.navbar {
   font-size: 18px;
   font-weight: normal;
+  background-color: #F8F8F8;
   background-image: url("../img/bg-header.jpg");
   background-repeat: repeat-x;
+  background-size: 100% 100%;
   border-bottom: 1px solid #C0C0C0;
 }
 
@@ -175,7 +177,7 @@ header.navbar li a:hover {
 
 .wm-banner a {
   display: inline-block;
-  margin: -40% 0 0 54%;
+  margin: -38% 0 0 54%;
   z-index: 100;
 }
 
