@@ -41,7 +41,7 @@ article dd {
 aside ul {
   padding-left: 20px;
   line-height: 169%;
-  list-style: outside square;
+  list-style: outside circle;
 }
 
 footer {
@@ -50,7 +50,7 @@ footer {
 
 footer address {
   margin: 15px 0;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 footer address img {
@@ -58,7 +58,7 @@ footer address img {
 }
 
 footer address a {
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 footer address a:hover {
@@ -74,8 +74,10 @@ blockquote {
 header.navbar {
   font-size: 18px;
   font-weight: normal;
+  background-color: #F8F8F8;
   background-image: url("../img/bg-header.jpg");
   background-repeat: repeat-x;
+  background-size: 100% 100%;
   border-bottom: 1px solid #C0C0C0;
 }
 
@@ -88,14 +90,14 @@ header.navbar .icon-bar {
 }
 
 header.navbar a.navbar-brand {
-  padding: 10px 15px 0;
+  padding: 10px 15px 8px;
 }
 
 header.navbar li a {
   color: #7E8691;
 }
 
-header.navbar li a:hover {
+header.navbar ul.navbar-nav a:hover {
   color: #428BCA;
 }
 
@@ -105,6 +107,10 @@ header.navbar li a:hover {
 
 .page-header + .wm-pub-metadata {
   margin-top: -14px;
+}
+
+.well .media-body p {
+  margin-bottom: 0;
 }
 
 .wm-hidden {
@@ -175,7 +181,7 @@ header.navbar li a:hover {
 
 .wm-banner a {
   display: inline-block;
-  margin: -40% 0 0 54%;
+  margin: -38% 0 0 54%;
   z-index: 100;
 }
 
@@ -290,7 +296,7 @@ header.navbar li a:hover {
   position: fixed;
   top: 100px;
   padding: 0 20px 20px;
-  background-color: #FFFFFFFFF;
+  background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 7px;
   box-shadow: 0px 6px 12px rgba(0,​ 0,​ 0,​ 0.176);
@@ -372,6 +378,47 @@ header.navbar li a:hover {
 .wm-inline-search {
   width: 60%;
   margin-top: -40px;
+}
+
+.wm-activity {
+  margin-bottom: 20px;
+}
+
+.wm-activity h5 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.wm-activity a {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.wm-activity span {
+  color: #999999;
+}
+
+.wm-recent-news li {
+  margin-top: 10px;
+  color: #3276B1;
+}
+
+.wm-recent-news li h5 {
+  margin: 0;
+  color: #333333;
+  line-height: 144%;
+}
+
+.wm-recent-news li span {
+  color: #999999;
+}
+
+.wm-member-list div {
+  margin: 20px 0 20px;
+}
+
+.wm-member-list a {
+  margin-left: 10px;
 }
 
 @media (min-width: 768px) {
