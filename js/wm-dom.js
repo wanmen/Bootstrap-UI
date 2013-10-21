@@ -60,6 +60,9 @@
     $('.wm-show-video a').on('click', function() {
       var video = $(this).attr('href'),
         width = $('main article').width();
+      if(!$('.wm-video iframe').length) {
+        $('.wm-video').append('<iframe src="http://player.youku.com/"></iframe>');
+      }
       if(video.indexOf('youku') != -1) {
         var vid = video.slice(video.indexOf('id_') + 3, -5);
         video = 'http://player.youku.com/embed/' + vid;
@@ -72,6 +75,7 @@
     });
 
     $('.wm-video button.close').on('click', function() {
+      $('.wm-video iframe').remove();
       $('.wm-video').hide();
     });
 
