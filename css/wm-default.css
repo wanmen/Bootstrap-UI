@@ -299,7 +299,7 @@ header.navbar ul.navbar-nav a:hover {
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 7px;
-  box-shadow: 0px 6px 12px rgba(0,​ 0,​ 0,​ 0.176);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
   cursor: move;
   z-index: 1000;
 }
@@ -382,6 +382,7 @@ header.navbar ul.navbar-nav a:hover {
 
 .wm-activity {
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .wm-activity h5 {
@@ -419,6 +420,43 @@ header.navbar ul.navbar-nav a:hover {
 
 .wm-member-list a {
   margin-left: 10px;
+}
+
+.wm-member-info {
+  margin: 40px 0;
+  padding: 0 15px;
+}
+
+.wm-member-info section {
+  padding-bottom: 20px;
+  background: #F5F5F5;
+  border-radius: 8px;
+}
+
+.wm-member-info h3 {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: none;
+}
+
+.wm-member-info img {
+  display: block;
+  width: 68%;
+  margin: 0 auto 20px;
+}
+
+.wm-member-info li a {
+  padding: 7px 10px;
+}
+
+.wm-recent-events .container {
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  font-size: 16px;
+  background-color: #F5F5F5;
+  border: 1px solid #E3E3E3;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+  border-radius: 4px;
 }
 
 @media (min-width: 768px) {
