@@ -137,6 +137,16 @@
         </h3>
         <form class="wm-inline-search pull-right" role="search" method="get" action="/search">
           <div class="input-group">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                排序 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">按时间排序</a></li>
+                <li><a href="#">按评分排序</a></li>
+                <li><a href="#">按热门程度排序</a></li>
+              </ul>
+            </div>
             <input type="hidden" name="type" value="book,video,article">
             <input type="hidden" name="list" value="book,video,article,mix">
             <input class="form-control" type="search" name="title" placeholder="图书，视频，经验贴，标签" title="请输入关键词进行搜索"/>
